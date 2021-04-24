@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
   <title>PINC</title>
 </head>
 <body>
@@ -42,48 +43,178 @@
       <form class="FIO" action="https://echo.htmlacademy.ru" method="post">
 
           <p class="appointment-item">
-            <label for="appointment-surname red">ФАМИЛИЯ:</label><br>
-            <input id="appointment-surname" type="text" name="surname" value="" placeholder="Укажите фамилию *">
+            <label>ФАМИЛИЯ:<br>
+              <input  type="text" name="surname"  placeholder="Укажите фамилию *">
+            </label>
           </p>
           <p class="appointment-item">
-            <label for="appointment-name red">ИМЯ:</label><br>
-            <input id="appointment-name" type="text" name="name" value="" placeholder="Введите ваше имя *">
+            <label>ИМЯ:<br>
+              <input  type="text" name="name"  placeholder="Введите ваше имя *">
+            </label>
           </p>
-          
-            <label for="appointment-middlename red">ОТЧЕСТВО:</label><br>
-            <input id="appointment-middlename red" type="text" name="middlename" value="" placeholder="Ну и отчество тоже">
+          <p>
+            <label>ОТЧЕСТВО:<br>
+              <input type="text" name="middlename"  placeholder="Ну и отчество тоже">
+            </label>
           </p>
         
     
           <div class="checkboxs__title">
-            <h3>Ваши безбашенные<br>достижения в путешествии</h3>
+            <h3>Ваши безбашенные<br>достижения в путешествии:</h3>
           </div>
 
           <div class="checkboxs__row">
-            <input type="checkbox" name="achievements" value="" checked="checked">Сделал селфи с акулой <br>
-            <input type="checkbox" name="achievements" value="" checked="checked">Обгорел на пляже<br>
-            <input type="checkbox" name="achievements" value="">Видел Чака Норриса<br>
-            <input type="checkbox" name="achievements" value="">Накупил сувениров<br>
-            <input type="checkbox" name="achievements" value="" checked="checked">Удержал башню<br>
-            <input type="checkbox" name="achievements" value="">Разгромил отель
+
+            <label class="check option">
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Сделал селфи с акулой 
+            </label>  
+            
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked>
+              <span class="check__box" ></span>
+              Сделал селфи с акулой 
+            </label>  
+            
+            <label class="check option">
+              <input class="check__input" type="checkbox" disabled>
+              <span class="check__box"></span>
+              Сделал селфи с акулой 
+            </label>
+
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked disabled>
+              <span class="check__box"></span>              
+              Сделал селфи с акулой 
+            </label>
+
+
+            <label class="check option">
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Обгорел на пляже
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked>
+              <span class="check__box"></span>
+              Обгорел на пляже
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" disabled>
+              <span class="check__box"></span>
+              Обгорел на пляже
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked disabled>
+              <span class="check__box"></span>
+              Обгорел на пляже              
+            </label>
+
+            <label class="check option">  
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Видел Чака Норриса
+            </label>
+            <label class="check option">  
+              <input class="check__input" type="checkbox" checked>
+              <span class="check__box"></span>
+              Видел Чака Норриса
+            </label>
+            <label class="check option"> 
+              <input class="check__input" type="checkbox" disabled>
+              <span class="check__box"></span>
+              Видел Чака Норриса
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked disabled>
+              <span class="check__box"></span>
+              Видел Чака Норриса     
+            </label>
+
+            <label class="check option">            
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Накупил сувениров
+            </label>
+            <label class="check option">            
+              <input class="check__input" type="checkbox" checked>
+              <span class="check__box"></span>
+              Накупил сувениров
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" disabled>
+              <span class="check__box"></span>
+              Накупил сувениров
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked disabled>
+              <span class="check__box"></span>              
+              Накупил сувениров
+            </label>
+
+            <label class="check option">          
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Удержал башню
+            </label> 
+            <label class="check option">          
+              <input class="check__input" type="checkbox"  checked>
+              <span class="check__box"></span>
+              Удержал башню
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" disabled>
+              <span class="check__box"></span>
+              Удержал башню
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked disabled>
+              <span class="check__box"></span>              
+              Удержал башню
+            </label> 
+
+            <label class="check option"> 
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Разгромил отель
+            </label> 
+            <label class="check option"> 
+              <input class="check__input" type="checkbox" checked>
+              <span class="check__box"></span>
+              Разгромил отель
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" disabled>
+              <span class="check__box"></span>
+              Разгромил отель
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked disabled>
+              <span class="check__box"></span>              
+              Разгромил отель
+            </label>
           </div>
+            
     
     
           <div class="telef">
             <p>
-              <label for="appointment-surname red">НОМЕР ТЕЛЕФОНА</label><br>
-              <input id="appointment-surname" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
+              <label>НОМЕР ТЕЛЕФОНА<br>
+                <input  type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
+              </label>
             </p>
             <p>
-              <label for="appointment-name red">АДРЕС ПОЧТЫ</label><br>
-              <input id="appointment-name" type="email" name="email" value="" placeholder="Введите почту *">
+              <label>АДРЕС ПОЧТЫ<br>
+                <input type="email" name="email" value="" placeholder="Введите почту *">
+              </label>
             </p>
           </div>  
     
           <div class="radios">
-            <input type="radio" name="gadget" value="" checked="checked">Pink для iOS<br>
-            <input type="radio" name="gadget" value="">Pink на Android<br>
-            <input type="radio" name="gadget" value="">Windows Phone<br>
+            <input type="radio" name="gadget"  checked="checked">Pink для iOS<br>
+            <input type="radio" name="gadget" >Pink на Android<br>
+            <input type="radio" name="gadget" >Windows Phone<br>
           </div>
 
           <div class="emotions">
@@ -98,12 +229,15 @@
           <p>*-обязательные поля</p>
       </form>
     </section>
+
     <footer class="footer">
       <div class="footer__logo">
         <a href=""><img class="glass_red" src="../img/glasses.png" alt="">PINK</a>
       </div>
       <div class="footer__row">
-
+        <a class="logo__twitter"></a>
+        <a class="logo__facebook"></a>
+        <a class="logo__youtube"></a>
       </div>
       <div class="footer__text">
         <div class="footer__title">Разработано</div>

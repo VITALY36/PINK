@@ -68,3 +68,34 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+
+.option {
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.check {
+  padding-left: 1.2em;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  margin-top: 0.3em;
+  margin-left: -1em;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 0.05em;
+  background-color: white;
+  box-shadow: 0 0 0 0.1em #4A90E2;
+}
+
+.check__input:checked + .check__box {
+  background-color: yellow;
+  background-image: url("../../img/tick.svg");
+}
