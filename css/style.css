@@ -88,13 +88,13 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   margin-top: 0.3em;
   margin-left: -1em;
-  width: 0.6em;
-  height: 0.6em;
+  width: 1em;
+  height: 1em;
   border-radius: 0.05em;
   background-color: white;
   box-shadow: 0 0 0 0.1em #4A90E2;
 }
 
 .check__input:checked + .check__box {
-  background-image: url("img/tick.png");
+  background-image: url("../img/tick.png");
 }
