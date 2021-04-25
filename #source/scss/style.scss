@@ -88,8 +88,8 @@
 //-----------------Checked--------------------------------------------------------------------------------------//
 
 .check__input:checked + .check__box {
-  background-color: yellow;
-  background-image: url("../../img/tick.svg");
+  //background-color: yellow;
+  background-image: url("img/tick.png");
 }
 
 //-----------------Focused------------------------------------------------------------//
