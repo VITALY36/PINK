@@ -1,0 +1,29 @@
+.option {
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.check {
+  padding-left: 1.2em;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  margin-top: 0.3em;
+  margin-left: -1em;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.05em;
+  background-color: white;
+  box-shadow: 0 0 0 0.1em #4A90E2;
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../img/tick.png");
+}

@@ -1,0 +1,115 @@
+
+
+//===================CHECKBOX======================================================================================================//
+//.option {
+//  display: block;
+//  margin-bottom: 0.25em;
+//}
+
+//.check {
+//  padding-left: 1.2em;
+//}
+
+//.check__input {
+ // position: absolute;
+ // -webkit-appearance: none;
+ // -moz-appearance: none;
+ // appearance: none;
+//}
+
+//.check__box {
+ // position: absolute;
+  //margin-left: -1.2em;
+ // width: 1.2em;
+  //height: 1.2em;
+  //background-image: url("../img/checkbox.png");
+  //background-color: white;
+//}
+//-----------------Checked--------------------------------------------------------------------------------------//
+
+//.check__input:checked+.check__box {
+    //background-image: url("../img/tick.png");
+//}
+
+//-----------------Focused------------------------------------------------------------//
+
+//.check__input:focus+.check__box {
+  //background-image: url("");
+//}
+
+//.check__input:checked:focus+.check__box {
+  //background-image: url("");
+//}
+
+//------------------------------Disabled----------------------------------------------------------//
+
+//.check__input:disabled+.check__box {
+  //}
+ ///.check__input:checked:disabled+.check__box {
+  //background-image: url("");
+//}
+
+//--------------------------------------------------Другой способ-----------------------------------------------------//
+
+.option {
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.check {
+  padding-left: 1.2em;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  margin-top: 0.3em;
+  margin-left: -1em;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.05em;
+  background-color: white;
+  box-shadow: 0 0 0 0.1em #4A90E2;
+  
+}
+
+
+
+
+
+
+
+//-----------------Checked--------------------------------------------------------------------------------------//
+
+.check__input:checked + .check__box {
+  //background-color: yellow;
+  background-image: url("../img/tick.png");
+}
+
+//-----------------Focused------------------------------------------------------------//
+
+.check__input:focus+.check__box {
+
+}
+
+.check__input:checked:focus+.check__box {
+
+}
+
+//------------------------------Disabled----------------------------------------------------------//
+
+.check__input:disabled+.check__box {
+
+}
+
+.check__input:checked:disabled+.check__box {
+
+}
+
+
