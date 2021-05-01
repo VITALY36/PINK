@@ -1,19 +1,34 @@
 @import "null.scss";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,700");
 
+
+
 .wrapper {
   font-family: 'Open Sans';
   font-weight: 400;
 }
 
 .header {
-  background-color: rgba(40, 54, 69, 1);
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-  
+.header__row {
+  display: flex;
+  justify-content: space-between;
+}  
 
 .menu-nav a {
   color: white;
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
 }
+
+//================Бургер================================//
 
 
 .menu-btn {
@@ -34,12 +49,24 @@
   height: 2px;
   background-color:white;
 }
+.menu-btn span:hover {
+  background-color: rgba(210, 40, 86, 1);
+}
+.menu-btn span:before:hover {
+  background-color: rgba(210, 40, 86, 1)
+}
+.menu-btn span::after:hover {
+  background-color: rgba(210, 40, 86, 1)
+}
+
 .menu-btn span::before,
 .menu-btn span::after {
   content: '';
   display: inline-block;
   transition: 1s;
 }
+
+
 .menu-btn span::before {
   transform: translateY(-5px);
 }
@@ -47,4 +74,290 @@
   transform: translateY(5px);
 }
 
+  //======================Бургер-Крестик===============================//
+
+
+.menu-btn_active span {
+  height: 0;
+}
+
+.menu-btn_active span::before {
+  transform: rotate(45deg);
+}
+.menu-btn_active span::before {
+  transform: rotate(-45deg);
+}
+
+//===========================Блок1 app=========================//
+
+
+.app {
+  background:url('../img/screen-mobile.png'), url('../img/phone.png'), url('../img/back-mobile.png');
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 25vh;
+}
+
+.app__img {
+  position: relative;
+}
+
+.app__title {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-weight: 300;
+  color:white;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+//============================файл app__form================================
+
+.app__form {
+  background: url('../img/back-mobile.png') no-repeat;
+  width: 15vw;
+  height: 25vh;
+}
+.form__title {
+  position: absolute; 
+  font-weight: 300;
+  color:white;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+} 
+//========================forms  form=================================
+.forms__p {
+  text-align: center;
+  display: flex;
+}
+
+//========================main-link=======================//
+
+.main__link {
+  background-color: rgba(29, 38, 49, 1);
+  color:white;
+  text-align: center;
+}
+
+.button {
+  padding: 21px 48px;
+  border-radius: 35px;
+  border: 2px solid white;
+  background-color: rgba(29, 38, 49, 1);
+  color: white;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 38px;
+  font-size: 18px;
+  line-height: 18px;
+}
+  
+.app__button_small {
+  display: flex;
+  justify-content:space-evenly;
+  padding-bottom: 31px;
+  align-items: flex-end;
+}
+.app__text {
+  padding-bottom: 38px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+} 
+
+
+//==============================item1===============================//
+
+.item1__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 70px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.text1__item1 {
+  padding-bottom: 30px; 
+}
+.item1__text {
+  color: rgba(40, 54, 69, 1);
+  line-height: 28.8px;
+  font-size: 24px;
+}
+
+
+//===============================item2=======//
+
+
+.item2__title {
+  color:rgba(0, 0, 0, 1);
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 18px;
+}
+.item2__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(40, 54, 69, 1);
+
+}
+.item2__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #F2F2F2;
+}
+
+//=======================effekt==============//
+
+
+//========================slider======================================
+.wrapper__slider {
+  text-align: center;
+}
+.slider__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.slider__text {
+  font-size: 14px;
+  line-height: 30px;
+  color:rgba(40, 54, 69, 1);
+}
+
+//=========================slider-table==================================
+
+
+
+
+.table, td, th {
+  border: thin solid rgba(229, 229, 229, 1);
+  border-spacing: 0px;
+}
+th {
+  background-color: rgba(40, 54, 69, 1);
+}
+td, th {
+  padding: 25px;
+}
+td {
+  width: 276px;
+}
+/*.cell //{     таблица Tablet
+  text-align: center;
+}*/
+.table__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(40, 54, 69, 1);
+}
+.table__row_big {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  color: white;
+}
+.table__rowp {
+  font-weight: 300;
+}
+.trb {
+  background: url('../img/ХИТ.png')10px 10px no-repeat, url('../img/hit ribbon.png') no-repeat, rgba(40, 54, 69, 1); 
+}
+
+
+
+//======================Contacts==========================================
+
+
+
+.contacts {
+  text-align: center;
+}
+.contacts__questions {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28,8px;
+  color: rgba(40, 54, 69, 1);
+  padding-bottom: 45px;
+}
+.contacts__item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24,51px;
+  color: rgba(40, 54, 69, 1);
+  padding-bottom: 13px;
+}
+.contact {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32,68px;
+  color: rgba(210, 40, 86, 1);
+  padding-bottom: 31px;
+}
+
+
+
+//===========================Footer==============================================
+
+
+
+.footer {
+  text-align: center;
+}
+.glass_red {
+  padding-right: 12px;
+}
+.footer__logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 41px;
+}
+.footer__row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 41px;
+}
+
+.logo__twitter, .logo__facebook {
+  margin-right: 14px;
+}
+
+.footer__ellipse {
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+}
+
+.logo__twitter {
+  background: url('../img/twitter.png') 12px 15px no-repeat;
+}
+.logo__facebook {
+  background: url('../img/facebook.png') 16px 12px no-repeat;
+}
+.logo__youtube {
+  background: url('../img/youtube.png') 15px 15px no-repeat;
+}
+.footer__text {
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  padding-top: 41px;
+  padding-bottom: 40px;
+}
+.footer__title {
+  padding-right: 15px;
+}
 
