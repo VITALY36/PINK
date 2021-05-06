@@ -71,6 +71,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+.app__form {
+  background: url("../img/back-mobile.png") no-repeat;
+  width: 15vw;
+  height: 25vh;
+}
+
+.form__title {
+  position: absolute;
+  font-weight: 300;
+  color: white;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
 .wrapper {
   font-family: "Open Sans";
   font-weight: 400;
@@ -177,26 +192,19 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 120%;
 }
 
-.app__form {
-  background: url("../img/back-mobile.png") no-repeat;
+/*.app__form {
+  background: url('../img/back-mobile.png') no-repeat;
   width: 15vw;
   height: 25vh;
 }
-
 .form__title {
-  position: absolute;
+  position: absolute; 
   font-weight: 300;
-  color: white;
+  color:white;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-}
-
-.forms__p {
-  text-align: center;
-  display: flex;
-}
-
+} */
 .main__link {
   background-color: #1d2631;
   color: white;
