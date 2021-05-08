@@ -1,3 +1,11 @@
+.container {
+  max-width: 280px;
+  margin: 0px auto;
+}
+
+//===============================app-form==================================
+
+
 .app__form {
   background: url('../img/back-mobile.png') no-repeat;
   width: 15vw;
@@ -11,3 +19,23 @@
   line-height: 120%;
   text-align: center;
 } 
+
+//=====================================forms==============================
+
+.forms_p {
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(40, 54, 69, 1);
+  padding-top: 54px;
+  padding-bottom: 55px;
+}
+.labels {
+  color: rgba(210, 40, 86, 1);
+  margin-bottom: 17px;
+}
+.familia {
+border: 2px solid rgba(229, 229, 229, 1);
+padding: 23px 78px 23px 20px;
+border-radius: 5px;
+}
+

@@ -71,6 +71,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+.container {
+  max-width: 280px;
+  margin: 0px auto;
+}
+
 .app__form {
   background: url("../img/back-mobile.png") no-repeat;
   width: 15vw;
@@ -84,6 +89,25 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+}
+
+.forms_p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  padding-top: 54px;
+  padding-bottom: 55px;
+}
+
+.labels {
+  color: #d22856;
+  margin-bottom: 17px;
+}
+
+.familia {
+  border: 2px solid #e5e5e5;
+  padding: 23px 78px 23px 20px;
+  border-radius: 5px;
 }
 
 .photo__title {
@@ -154,14 +178,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px auto;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
-  margin: 0px auto;
-  text-align: center;
-}
-
 .blog__title {
   text-align: center;
   padding: 0px 20px;
@@ -228,6 +244,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper__post {
   background: #f2f2f2;
+  min-width: 320px;
+  margin: 0px auto;
+  text-align: center;
 }
 
 .post__image {
@@ -257,6 +276,12 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
   font-family: "Open Sans";
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  margin: 0px auto;
+  text-align: center;
+  color: #283645;
 }
 
 .header {

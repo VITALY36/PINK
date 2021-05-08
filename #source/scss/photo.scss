@@ -63,13 +63,7 @@ flex-direction: column;
   max-width: 280px;
   margin: 0px auto;
 }
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
-  margin: 0px auto;
-  text-align: center;
-}
+
 
 .blog__title {
   text-align: center;
@@ -146,6 +140,9 @@ flex-direction: column;
 }
 .wrapper__post {
   background: rgba(242, 242, 242, 1);
+  min-width: 320px;
+  margin: 0px auto;
+  text-align: center;
 }
 .post__image {
   background: url("../img/photo-7-tablet.png") 0 0 no-repeat;
