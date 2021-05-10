@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="../css/style.css">
   <title>PINC</title>
 </head>
+
 <body>
-  <div class="wrapper container">
+  <div class="wrapper_mobile">
+
     <header class="header">
       <div class="header__row">
         <div class="header__logo">
@@ -34,205 +36,150 @@
     <main>
 
       <section class="app__form">
-      <div class="app__img back__img">
+        <div class="app__img back__img">
           <div class="form__title">Конкурс на самое безбашенное путешествие с Пинк</div>
         </div>
       </section>
 
-      <section class="forms">
+      
+      <div class="forms">
         <div class="forms_p">Поделитесь своей историей и получите<br> шанс выиграть ценный
-            приз — 1000<br> миль на вашу бонусную карту!</div>
+            приз — 1000<br> миль на вашу бонусную карту!
+        </div>
+      </div>  
+      
+
         
-
-        <form class="FIO" action="https://echo.htmlacademy.ru" method="post">
-
-          <p class="appointment-item">
-            <label class="labels">ФАМИЛИЯ:<br>
-              <input class="familia"  type="text" name="surname"  placeholder="Укажите фамилию *">
-            </label>
-          </p>
-          <p class="appointment-item">
-            <label class="labels">ИМЯ:<br>
-              <input class="familia"  type="text" name="name"  placeholder="Введите ваше имя *">
-            </label>
-          </p>
-          <p>
-            <label class="labels">ОТЧЕСТВО:<br>
-              <input class="familia" type="text" name="middlename"  placeholder="Ну и отчество тоже">
-            </label>
-          </p>
-        
-    
-          <div class="checkboxs__title">
-            <h3>Ваши безбашенные<br>достижения в путешествии:</h3>
-          </div>
-
-          <div class="checkboxs__row">
-
-            <label class="check option">
-              <input class="check__input" type="checkbox">
-              <span class="check__box"></span>
-              Сделал селфи с акулой 
-            </label>  
+          <form class="FIO" action="https://echo.htmlacademy.ru" method="post">
             
-            <label class="check option">
-              <input class="check__input" type="checkbox" checked>
-              <span class="check__box" ></span>
-              Сделал селфи с акулой 
-            </label>  
-            
-            <label class="check option">
-              <input class="check__input" type="checkbox" disabled>
-              <span class="check__box"></span>
-              Сделал селфи с акулой 
-            </label>
-
-            <label class="check option">
-              <input class="check__input" type="checkbox" checked disabled>
-              <span class="check__box"></span>              
-              Сделал селфи с акулой 
-            </label>
-
-
-            <label class="check option">
-              <input class="check__input" type="checkbox">
-              <span class="check__box"></span>
-              Обгорел на пляже
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" checked>
-              <span class="check__box"></span>
-              Обгорел на пляже
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" disabled>
-              <span class="check__box"></span>
-              Обгорел на пляже
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" checked disabled>
-              <span class="check__box"></span>
-              Обгорел на пляже              
-            </label>
-
-            <label class="check option">  
-              <input class="check__input" type="checkbox">
-              <span class="check__box"></span>
-              Видел Чака Норриса
-            </label>
-            <label class="check option">  
-              <input class="check__input" type="checkbox" checked>
-              <span class="check__box"></span>
-              Видел Чака Норриса
-            </label>
-            <label class="check option"> 
-              <input class="check__input" type="checkbox" disabled>
-              <span class="check__box"></span>
-              Видел Чака Норриса
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" checked disabled>
-              <span class="check__box"></span>
-              Видел Чака Норриса     
-            </label>
-
-            <label class="check option">            
-              <input class="check__input" type="checkbox">
-              <span class="check__box"></span>
-              Накупил сувениров
-            </label>
-            <label class="check option">            
-              <input class="check__input" type="checkbox" checked>
-              <span class="check__box"></span>
-              Накупил сувениров
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" disabled>
-              <span class="check__box"></span>
-              Накупил сувениров
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" checked disabled>
-              <span class="check__box"></span>              
-              Накупил сувениров
-            </label>
-
-            <label class="check option">          
-              <input class="check__input" type="checkbox">
-              <span class="check__box"></span>
-              Удержал башню
-            </label> 
-            <label class="check option">          
-              <input class="check__input" type="checkbox"  checked>
-              <span class="check__box"></span>
-              Удержал башню
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" disabled>
-              <span class="check__box"></span>
-              Удержал башню
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" checked disabled>
-              <span class="check__box"></span>              
-              Удержал башню
-            </label> 
-
-            <label class="check option"> 
-              <input class="check__input" type="checkbox">
-              <span class="check__box"></span>
-              Разгромил отель
-            </label> 
-            <label class="check option"> 
-              <input class="check__input" type="checkbox" checked>
-              <span class="check__box"></span>
-              Разгромил отель
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" disabled>
-              <span class="check__box"></span>
-              Разгромил отель
-            </label>
-            <label class="check option">
-              <input class="check__input" type="checkbox" checked disabled>
-              <span class="check__box"></span>              
-              Разгромил отель
-            </label>
-          </div>
-            
-    
-    
-          <div class="telef">
-            <p>
-              <label>НОМЕР ТЕЛЕФОНА<br>
-                <input  type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
-              </label>
-            </p>
-            <p>
-              <label>АДРЕС ПОЧТЫ<br>
-                <input type="email" name="email" value="" placeholder="Введите почту *">
-              </label>
-            </p>
-          </div>  
-    
-          <div class="radios">
-            <input type="radio" name="gadget"  checked="checked">Pink для iOS<br>
-            <input type="radio" name="gadget" >Pink на Android<br>
-            <input type="radio" name="gadget" >Windows Phone<br>
-          </div>
-
-          <div class="emotions">
-            <div class="emotions__title"><h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3></div>
-            <div class="emotios__row">
-              <div class="emotions__row1">
-                <div class="emotions__text">Можно прям в красках, не стесняясь в выражениях</div>
-              </div>
+            <div class="appointment-item__row">
+              <p class="appointment-item">
+                <label class="labels">ФАМИЛИЯ:</label>
+                <div><input class="familia"  type="text" name="surname"  placeholder="Укажите фамилию *"></div>
+              </p>
+              <p class="appointment-item">
+                <label class="labels">ИМЯ:</label>
+                <div><input class="familia"  type="text" name="name"  placeholder="Введите ваше имя *"></div>
+              </p>
+              <p class="appointment-item">
+                <label class="labels">ОТЧЕСТВО:</label>
+                <div><input class="familia" type="text" name="middlename"  placeholder="Ну и отчество тоже"></div>
+              </p>
             </div>
-          </div>
-          <input type="submit">
-          <p>*-обязательные поля</p>
-        </form>
-      </section>
+          
+
+            
+          
+            <div class="checkboxs__row">
+
+              <div class="checkboxs__title">
+                <h3>Ваши безбашенные<br>достижения в путешествии:</h3>
+              </div>
+
+              <label class="check option">
+                <input class="check__input" type="checkbox" checked>
+                <span class="check__box" ></span>
+                Сделал селфи с акулой 
+              </label>  
+
+              <label class="check option">
+                <input class="check__input" type="checkbox" checked>
+                <span class="check__box"></span>
+                Обгорел на пляже
+              </label>
+
+              <label class="check option">  
+                <input class="check__input" type="checkbox">
+                <span class="check__box"></span>
+                Видел Чака Норриса
+              </label>
+
+              <label class="check option">            
+                <input class="check__input" type="checkbox">
+                <span class="check__box"></span>
+                Накупил сувениров
+              </label>
+              
+              <label class="check option">          
+                <input class="check__input" type="checkbox"  checked>
+                <span class="check__box"></span>
+                Удержал башню
+              </label>
+
+              <label class="check option"> 
+                <input class="check__input" type="checkbox">
+                <span class="check__box"></span>
+                Разгромил отель
+              </label> 
+
+            </div>  
+          
+
+            <div class="telef">
+              <div class="appointment-item__row">
+                <p class="appointment-item">
+                  <label class="labels">НОМЕР ТЕЛЕФОНА</label>
+                  <div><input class="familia"  type="tel" name="tel" value="" placeholder="Номер, пожалуйста"></div>
+                </p>
+                
+                <p class="appointment-item">
+                  <label class="labels">АДРЕС ПОЧТЫ</label>
+                  <div><input class="familia" type="email" name="email" value="" placeholder="Введите почту *"></div>
+                </p>
+              </div>  
+            </div>  
+              
+    
+            <div class="radios">
+              <div class="checkboxs__title">
+                <h3>С каким приложением<br>путешествовали?</h3>
+              </div>
+              <div class="radio__row">
+
+                <label class="gadjets">
+                  <input class="radio__input" type="radio" name="gadget" checked="checked">
+                  <span class="radio__box"></span>
+                  Pink для iOS
+                </label> 
+
+                <label class="gadjets">
+                  <input class="radio__input" type="radio" name="gadget">
+                  <span class="radio__box"></span>
+                  Pink на Android
+                </label>  
+
+                <label class="gadjets">
+                  <input class="radio__input" type="radio" name="gadget" >
+                  <span class="radio__box"></span>
+                  Windows Phone
+                </label>
+
+              </div>  
+            </div>
+
+            <div class="emotions">
+              <div class="container_mobile">
+
+                <div class="emotions__title"><h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3></div>
+
+                <div class="emotios__row">
+                  <div class="emotions__text">Можно прям в красках, не стесняясь в выражениях</div>
+                </div>
+
+                <button class="emotions__button">ОТПРАВИТЬ ФОРМУ</button>
+                
+                  <p><span class="red__field">*</span>
+                    <span class="field__stroke">-обязательные поля</p></span>
+
+              </div>  
+            </div>
+
+            
+          </form>
+
+            
+        
+      
     </main>
 
     <footer class="footer">
@@ -252,8 +199,9 @@
         <div class="footer__img"><img src="../img/html academy.png" alt=""></div>
       </div>
     </footer>
-    
-  </div>
+
+  </div>  
+  
 </body>
 </html>
       
