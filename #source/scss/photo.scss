@@ -1,3 +1,4 @@
+//===========================photo app__form===========================
 
 .photo__title {
   color: white;
@@ -9,6 +10,8 @@
   display: flex;
   align-items: center;
 }
+
+//============================blog===================================
 .blog {
   display:flex;
   flex-direction: column;
@@ -19,9 +22,7 @@
   text-align: left;
   padding: 0px 20px;
 }
-.blog__name {
-  padding: 0px 20px;
-}
+
 .blog__subtitle {
   padding: 0px 20px;
   padding-top: 25px;
@@ -32,10 +33,13 @@
   padding-bottom: 26px;
   text-align: left;
 }
+
 .blog__subtitle span {
   padding-right: 18px;
 }
+
 .blog__name {
+  padding: 0px 20px;
   color: rgba(40, 54, 69, 1);
   font-weight: 700;
   line-height: 24px;
@@ -57,12 +61,7 @@ flex-direction: column;
 //----------------------blog-----------------
 
 
-.photo__container {
-  display: flex;
-  flex-direction: column;
-  max-width: 280px;
-  margin: 0px auto;
-}
+
 
 
 .blog__title {
@@ -77,21 +76,24 @@ flex-direction: column;
 //-------------------photo-container-------------
 
 
+
+
+
+.blog__image {
+  background:url("../img/ПАНОРАМА ДНЯ.png") 180px 13px no-repeat,
+              url("../img/подложка.png") 160px 0 no-repeat,
+              url("../img/panorama-tablet.png") 0 0 no-repeat; 
+              height: 16.6vh;
+              width: 100%;
+}
+
 .blog__item {
   display:flex;
   flex-direction: column;
   text-align:center;
   padding-bottom: 20px;
 }
-.blog__image {
-  background:url("../img/ПАНОРАМА ДНЯ.png") 180px 13px no-repeat,
-              url("../img/подложка.png") 160px 0 no-repeat,
-              url("../img/panorama-tablet.png") 0 0 no-repeat; 
-              height: 16.6vh;
-}
-              
-              
-              
+
 .blog__image1 {
   background:url("../img/photo-1-mobile.png") 0 0 no-repeat;
   height: 180px;

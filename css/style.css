@@ -294,10 +294,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 20px;
 }
 
-.blog__name {
-  padding: 0px 20px;
-}
-
 .blog__subtitle {
   padding: 0px 20px;
   padding-top: 25px;
@@ -314,6 +310,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blog__name {
+  padding: 0px 20px;
   color: #283645;
   font-weight: 700;
   line-height: 24px;
@@ -333,13 +330,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.photo__container {
-  display: flex;
-  flex-direction: column;
-  max-width: 280px;
-  margin: 0px auto;
-}
-
 .blog__title {
   text-align: center;
   padding: 0px 20px;
@@ -349,16 +339,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 60px;
 }
 
+.blog__image {
+  background: url("../img/ПАНОРАМА ДНЯ.png") 180px 13px no-repeat, url("../img/подложка.png") 160px 0 no-repeat, url("../img/panorama-tablet.png") 0 0 no-repeat;
+  height: 16.6vh;
+  width: 100%;
+}
+
 .blog__item {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-bottom: 20px;
-}
-
-.blog__image {
-  background: url("../img/ПАНОРАМА ДНЯ.png") 180px 13px no-repeat, url("../img/подложка.png") 160px 0 no-repeat, url("../img/panorama-tablet.png") 0 0 no-repeat;
-  height: 16.6vh;
 }
 
 .blog__image1 {
@@ -441,12 +432,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  width: 320px;
+  max-width: 320px;
   margin: 0px auto;
   color: #283645;
 }
 
 .container_mobile {
+  font-family: "Open Sans";
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
   max-width: 280px;
   margin: 0px auto;
 }
