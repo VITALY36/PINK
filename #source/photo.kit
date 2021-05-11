@@ -147,71 +147,68 @@
 
 
   <div class="wrapper_mobile">
+
       <section class="post">
       
         <div class="post__title">Затмите их всех!<br>
             Выкладывайте все, что накопилось в телефоне!</div>
       
-        <div class="wrapper__post">
+      <div class="wrapper__post">
         
-          <div class="post__image"></div>
-          
-          <div class="post__row">
-            <div class="post__img_s"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#D22856"/>
-              </svg>
-          </div>
+        <div class="post__image"></div>
 
-          <div class="post__img_s"><svg width="48" height="43" viewBox="0 0 48 43" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.3">
-            <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z" fill="#283645"/>
-            <path d="M48 40H0V43H48V40Z" fill="#283645"/>
-            </g>
-              </svg>
-          </div>
+        <div class="post__row">
+          <a href=""><div class="post__img_s post__img_s1"></div></a>  
+          <a href=""><div class="post__img_s post__img_s2"></div></a>
+          <a href=""><div class="post__img_s post__img_s3"></div></a>
+        </div>  
+        
 
-          <div class="post__img_s">
-            <img src="../img/contrast.png" alt="">
-          </div>
-
+        <div class="range option">
+          <input class="range__input" type="range" min="0" max="10">
         </div>
 
-        <div class="range">
-          <input type="range" min="0" max="10">
-        </div>
         <div class="line"></div>
 
         <form action="btn__row"> 
-          <p class="buttons"><button class="btn__blog">Запостить<button>
-          <button disabled class="btn__blog passive">Отмена</button></p>
+          <div class="buttons__row">
+            <span><button class="btn__blog">Запостить</button></span>
+            <span><button class="btn__blog_passive">Отмена</button><span>
+          </div>  
         </form>
+
       </div>  
       
       </section>
   
 
       <footer class="footer">
-      <div class="footer__logo">
+        <div class="footer__logo">
+          
+          <a href=""><div class="glass_red"><a href="" alt=""><svg width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M53.8917 6.58616L58.9302 27.7312C59.0013 27.9491 59.0184 28.1815 58.98 28.4078C58.9417 28.6341 58.849 28.8472 58.7102 29.0284C58.5715 29.2096 58.3909 29.3532 58.1845 29.4465C57.978 29.5398 57.7522 29.58 57.5268 29.5635H53.5201C52.8298 35.3747 47.9494 39.8784 42.0315 39.8784C36.1136 39.8784 31.2332 35.3747 30.543 29.5635H28.5778C27.8869 35.442 22.9527 40 16.9685 40C10.9742 40 6.0335 35.4266 5.35571 29.5337H1.45014C1.22961 29.5445 1.00974 29.5014 0.808914 29.4082C0.608085 29.315 0.432119 29.1743 0.295711 28.9979C0.159304 28.8214 0.0664152 28.6144 0.0248022 28.3941C-0.0168108 28.1737 -0.00593994 27.9464 0.0565069 27.7312L5.10477 6.58616C5.45562 4.25872 7.63865 0 13.4861 0C13.8738 0 14.2456 0.156518 14.5197 0.435122C14.7939 0.713727 14.9479 1.0916 14.9479 1.4856C14.9479 1.87961 14.7939 2.25748 14.5197 2.53608C14.2456 2.81468 13.8738 2.9712 13.4861 2.9712C8.7789 2.9712 8.04797 6.6654 7.9895 7.07146L3.3408 26.6022H5.37467C6.12089 20.7847 11.0272 16.2918 16.9685 16.2918C22.9066 16.2918 27.8107 20.7798 28.5611 26.5926L30.5587 26.6017C31.3043 20.8518 36.1567 16.4134 42.0315 16.4134C47.9178 16.4134 52.7776 20.8691 53.5086 26.6353V26.5824H55.6459L51.007 7.07146C50.9387 6.6654 50.237 2.9712 45.5104 2.9712C45.1227 2.9712 44.7509 2.81468 44.4767 2.53608C44.2026 2.25748 44.0485 1.87961 44.0485 1.4856C44.0485 1.0916 44.2026 0.713727 44.4767 0.435122C44.7509 0.156518 45.1227 0 45.5104 0C51.3578 0 53.5408 4.25872 53.8917 6.58616ZM25.6722 29.5635C25.7448 29.1018 25.7825 28.6283 25.7825 28.1459C25.7825 27.6164 25.7371 27.0977 25.65 26.5935C24.9252 22.3982 21.3141 19.2097 16.9685 19.2097C12.6203 19.2097 9.00753 22.402 8.28571 26.601C8.19945 27.1028 8.15447 27.619 8.15447 28.1459C8.15447 28.6205 8.19096 29.0864 8.26125 29.541C8.92191 33.8136 12.5687 37.0821 16.9685 37.0821C21.3605 37.0821 25.0023 33.8251 25.6722 29.5635ZM50.6138 29.5635C50.6874 29.102 50.7256 28.6285 50.7256 28.1459C50.7256 23.2777 46.8331 19.3313 42.0315 19.3313C37.2299 19.3313 33.3374 23.2777 33.3374 28.1459C33.3374 28.6285 33.3756 29.102 33.4492 29.5635C34.118 33.7577 37.7058 36.9605 42.0315 36.9605C46.3572 36.9605 49.945 33.7577 50.6138 29.5635Z" fill="#D22856"/>
+              </svg></a></div></a>
+          <a href=""><div class="logo_grey">pink</div></a>
+          
+        </div>
+          
+        <div class="footer__row">
+          <a href="https://twitter.com" target="_blank" class="logo__twitter footer__ellipse"></a>
+          <a href="https://www.facebook.com" target="_blank" class="logo__facebook footer__ellipse"></a>
+          <a href="https://www.youtube.com" target="_blank" class="logo__youtube footer__ellipse"></a>
+        </div>
 
-        <div class="glass_red"><a href=""><img  src="../img/glasses.png" alt=""></a></div>
-        <div class="logo_grey"><a href=""><img src="../img/pink-grey.png" alt=""></a></div>
-
-      </div>
-      <div class="footer__row">
-        <a href="" class="logo__twitter footer__ellipse"></a>
-        <a href="" class="logo__facebook footer__ellipse"></a>
-        <a href="" class="logo__youtube footer__ellipse"></a>
-      </div>
-      <div class="footer__text">
-        <div class="footer__title">Разработано</div>
-        <div class="footer__img"><img src="../img/html academy.png" alt=""></div>
-      </div>
+        <div class="footer__text">
+          <a href=""><div class="footer__title">Разработано</div></a>
+          <a href=""><div class="footer__img"></div></a>
+        </div>
       </footer>
+
   </div>    
-    
-  
 </body>
 </html>
+    
+  
         
       
       

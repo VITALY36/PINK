@@ -173,8 +173,8 @@
   text-align: center;
 }
 
-.button {
-  padding: 21px 48px;
+.butt__app {
+  padding: 21px 38px;
   border-radius: 35px;
   border: 2px solid white;
   background-color: rgba(29, 38, 49, 1);
@@ -230,6 +230,8 @@
   font-weight: 700;
   line-height: 24px;
   font-size: 18px;
+  padding-top: 53px;
+  padding-bottom: 24px;
 }
 .item2__text {
   font-size: 14px;
@@ -243,6 +245,15 @@
   justify-content: center;
   text-align: center;
   background-color: #F2F2F2;
+}
+.text_item {
+  padding-bottom: 48px;
+}
+.item2__img {
+  background:url("../img/iphone screen-3.png") no-repeat,
+        url("../img/iphone 3.png") no-repeat;
+  background-position: center;
+  height: 39vh;
 }
 
 //=======================effekt==============//
@@ -356,6 +367,14 @@ td {
   padding-top: 40px;
   padding-bottom: 41px;
 }
+.logo_grey {
+  font-size: 30px;
+  text-transform: uppercase;
+  color:rgba(40, 54, 69, 1)
+}
+.logo_grey a {
+  color: rgba(40, 54, 69, 1); 
+}
 .footer__row {
   display: flex;
   justify-content: center;
@@ -372,6 +391,8 @@ td {
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
 }
+
+
 
 .logo__twitter {
   background: url('../img/twitter.png') 12px 15px no-repeat;
@@ -392,4 +413,45 @@ td {
 .footer__title {
   padding-right: 15px;
 }
+.footer__img {
+  background: url("../img/html academy.png");
+  width: 27px;
+  height: 34px;
+}
+.footer__text {
+  display:flex;
+}
+.footer__title {
+  color:black;
+}
+//=======================Интерактивность=====
+
+
+.footer__img:hover {
+  background: url("../img/html academy black.png");
+}
+.footer__img:active {
+  opacity:0.3;
+}
+
+.glass_red:active {
+  opacity:0.3;
+}
+
+.logo_grey:hover {
+  color: rgba(210, 40, 86, 1);
+}
+
+.logo_grey:active {
+  color: rgba(40, 54, 69, 1);
+  opacity:0.3;
+}
+
+.footer__ellipse:hover {
+  border: 3px solid rgba(40, 54, 69, 1);
+}
+.footer__ellipse:active {
+  opacity: 0.1;
+}
+
 

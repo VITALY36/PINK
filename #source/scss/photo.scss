@@ -161,10 +161,145 @@ flex-direction: column;
   justify-content: space-evenly;
   padding-bottom: 40px;
 }
-.post__img_s:hover {
+
+.post__img_s1 {
+  background: url("../img/crop.png") no-repeat;
+  width:48px;
+  height: 43px;
+}
+.post__img_s2 {
+  background: url("../img/fill.png") no-repeat;
+  width:48px;
+  height: 43px;
+}
+.post__img_s3 {
+  background: url("../img/contrast.png") no-repeat;
+  width:48px;
+  height: 43px;
+}
+.post__img_s {
   opacity: 0.3;
+}
+
+
+.post__img_s:hover {
+  opacity: 0.5;
+}
+
+.post__img_s2:active {
+  background:url("../img/fill-red.png") no-repeat;
+}
+.post__img_s3:active {
+  background:url("../img/contrast-red.png") no-repeat;
+}
+
+
+//======================range ================================
+
+
+.range__input {
+  -webkit-appearance: none;
+  width: 100%; 
+  background: transparent; 
+}
+
+.range__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.range__input:focus {
+  outline: none; 
+}
+
+.range__input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+}
+
+.range__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid rgba(210, 40, 86, 1);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -7px; 
+}
+
+.range__input::-webkit-slider-thumb:active {
+  background: rgba(210, 40, 86, 1);
+}
+
+.range__input {
+  width: 240px;
+}
+
+.range__input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: rgba(40, 54, 69, 1);
+}
+
+
   
+  
+  
+
+
+
+//=============================================================
+
+
+
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: rgba(40, 54, 69, 1);
+  opacity: 0.1;
+  margin-bottom: 38px;
 }
-.post__img_s:active {
+.buttons__row {
+  display: flex;
+  flex-direction: column;
+}
+.btn__blog {
+  border: 3px solid rgba(210, 40, 86, 1);
   color:rgba(210, 40, 86, 1);
+  padding: 21px 90px;
+  margin-bottom: 12px;
 }
+.btn__blog_passive {
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  padding: 21px 103px;
+  margin-bottom: 40px;
+  opacity: 0.3;
+}
+.btn__blog, .btn__blog_passive {
+  display: inline;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 30px;
+}
+  
+.btn__blog:hover {
+  background-color: rgba(210, 40, 86, 1);
+  color: white;
+}
+.btn__blog:active {
+  background-color: rgba(210, 40, 86, 1);
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.btn__blog_passive:hover {
+  opacity: 0.6;
+}
+.btn__blog_passive:active {
+  background: rgba(40, 54, 69, 1);
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.3;
+}
+
