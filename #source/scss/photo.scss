@@ -1,21 +1,117 @@
+
+.container__photo {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px auto;
+  min-width: 320px;
+}
+
+
+.wrapper__post {
+  background: rgba(242, 242, 242, 1);
+  min-width: 320px;
+  margin: 0px auto;
+  text-align: center;
+}
+
 //===========================photo app__form===========================
 
 .photo__title {
   color: white;
   text-align: center;
-  //padding-top: 102px;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
   display: flex;
   align-items: center;
 }
+.blog__title,.blog__title1,.blog__title2 {
+  text-align: center;
+  padding: 0px 30px;
+  font-size: 14px;
+  line-height: 30px;
+  padding-top: 54px;
+  padding-bottom: 60px;
+}
+.blog__image {
+  background:url("../img/ПАНОРАМА ДНЯ.png") 180px 13px no-repeat,
+              url("../img/подложка.png") 160px 0 no-repeat,
+              url("../img/panorama-tablet.png") 0 0 no-repeat; 
+              height: 16vh;
+              width: 100%;
+              text-align: center;
+              margin: 0px auto;
+}
+.blog__title1 {
+  display: none;
+}
+.blog__title2 {
+  display: none;
+}
+
+
+@media (min-width: 660px) {
+  .container__photo {
+    min-width: 660px;
+  }
+  .blog__title {
+    display: none;
+  }
+  .blog__title2 {
+    display: none;
+  }
+  .blog__title1 {
+    display: block;
+    font-size: 18px;
+  }
+  .blog__image {
+    background:url("../img/ПАНОРАМА ДНЯ.png") 519px 70px no-repeat,
+                url("../img/подложка.png") 500px 57px no-repeat,
+                url("../img/panorama-tablet middle.png") 0 0 no-repeat; 
+                height: 59vh;
+                width: 100%;
+                text-align: center;
+                margin: 0px auto;
+  }
+}
+  
+
+@media (min-width: 1200px) {
+  .container__photo {
+    min-width: 1200px;
+  }
+  .blog__title1 {
+    display: none;
+  }
+  .blog__title {
+    display: none;
+  }
+  .blog__title2 {
+    display: block;
+    font-size: 18px;
+  }
+  .blog__image {
+    background:url("../img/ПАНОРАМА ДНЯ.png") 949px 67px no-repeat,
+                url("../img/подложка.png") 930px 54px no-repeat,
+                url("../img/panorama-desktop.png") 0 0 no-repeat; 
+                height: 58.5vh;
+                width: 100%;
+                text-align: center;
+                margin: 0px auto;
+  }
+}
 
 //============================blog===================================
 .blog {
-  display:flex;
-  flex-direction: column;
+  //display:flex;
+  //flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px auto;
 }
+
 .blog__text {
   font-size: 14px;
   line-height: 24px;
@@ -52,40 +148,46 @@
   text-transform: uppercase;
 }
 .blog__row {
-background: rgba(242, 242, 242, 1);
-display:flex;
-flex-direction: column;
+  display:flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.blog_rows {
+  background: rgba(242, 242, 242, 1);
 }
 
 
-//----------------------blog-----------------
+
+@media (min-width: 660px) {
+  .container__photo {
+    min-width: 660px;  
+  }
+  .blog__row {
+    width: 620px;
+  }
+  .blog__items {
+    background: rgba(242, 242, 242, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+  }
+  
+}
 
 
-
-
-
-.blog__title {
-  text-align: center;
-  padding: 0px 20px;
-  font-size: 14px;
-  line-height: 30px;
-  padding-top: 54px;
-  padding-bottom: 60px;
+@media (min-width: 1200px) {
+  .container__photo {
+    min-width: 1200px;
+  }
+  .blog__row {
+    width: 940px;
+  }
 }
 
 //-------------------photo-container-------------
 
-
-
-
-
-.blog__image {
-  background:url("../img/ПАНОРАМА ДНЯ.png") 180px 13px no-repeat,
-              url("../img/подложка.png") 160px 0 no-repeat,
-              url("../img/panorama-tablet.png") 0 0 no-repeat; 
-              height: 16.6vh;
-              width: 100%;
-}
 
 .blog__item {
   display:flex;
@@ -96,34 +198,91 @@ flex-direction: column;
 
 .blog__image1 {
   background:url("../img/photo-1-mobile.png") 0 0 no-repeat;
-  height: 180px;
-}
+  min-height: 180px;
+  }
 
 .blog__image2 {
   background:url("../img/photo-2-mobile.png") 0 0 no-repeat;
-  height: 180px;
+  min-height: 180px;
 }
 
 .blog__image3 {
   background:url("../img/photo-3-tablet.png") 0 0 no-repeat;
-  height: 180px;
+  min-height: 180px;
 }
 
 .blog__image4 {
   background:url("../img/photo-4-tablet.png") 0 0 no-repeat;
-  height: 180px;
+  min-height: 180px;
 }
 
 .blog__image5 {
   background:url("../img/photo-5-tablet.png") 0 0 no-repeat;
-  height: 180px;
+  min-height: 180px;
 }
 
 .blog__image6 {
   background:url("../img/photo-6-tablet.png") 0 0 no-repeat;
-  height: 180px;
+  min-height: 180px;
 }
 
+
+@media (min-width: 660px) {
+  
+  
+  .blog__image1 {
+    background:url("../img/photo-1-tablet.png") 0 0 no-repeat;
+    min-height: 300px;
+    width: 300px;
+    }
+  
+  .blog__image2 {
+    background:url("../img/photo-2-tablet.png") 0 0 no-repeat;
+    min-height: 300px;
+    width: 300px;
+  }
+  
+  .blog__image3 {
+    background:url("../img/photo-3-tablet1.png") 0 0 no-repeat;
+    min-height: 300px;
+    width: 300px;
+  }
+  
+  .blog__image4 {
+    background:url("../img/photo-4-tablet1.png") 0 0 no-repeat;
+    min-height: 300px;
+    width: 300px;
+  }
+  
+  .blog__image5 {
+    background:url("../img/photo-5-tablet1.png") 0 0 no-repeat;
+    min-height: 300px;
+    width: 300px;
+  }
+  
+  .blog__image6 {
+    background:url("../img/photo-6-tablet1.png") 0 0 no-repeat;
+    min-height: 300px;
+    width: 300px;
+  }
+  .blog {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 300px 300px;
+    gap: 20px;
+    //text-align: center;
+    //margin: 0px auto;
+
+  }
+}
+
+
+@media (min-width: 1200px)  {
+  .blog { 
+    grid-template-rows: auto auto;
+    grid-template-columns: 300px 300px 300px;
+  }
+}   
 
 //=====================post==========================================
 
@@ -139,14 +298,11 @@ flex-direction: column;
   color:rgba(40, 54, 69, 1);
   padding-top: 20px;
   padding-bottom: 50px;
+  width: 280px;
   text-align: center;
-}
-.wrapper__post {
-  background: rgba(242, 242, 242, 1);
-  min-width: 320px;
   margin: 0px auto;
-  text-align: center;
 }
+
 .post__image {
   background: url("../img/photo-7-tablet.png") 0 0 no-repeat;
   max-width: 100%;

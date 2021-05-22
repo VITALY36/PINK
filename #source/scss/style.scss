@@ -5,7 +5,9 @@
 
 
 //============================Общие стили===========================
-
+body {
+  background-color: aqua;
+}
 .wrapper_mobile {
   font-family: 'Open Sans';
   font-weight: 400;
@@ -13,7 +15,8 @@
   flex-direction: column;
   min-width: 320px;
   margin: 0px auto;
-  color:rgba(40, 54, 69, 1);
+  color: rgba(40, 54, 69, 1);
+  background-color: white;
   }
 
 .container_mobile {
@@ -40,18 +43,34 @@ img {
   height: auto;
 }
 
-//=====================================header=======================
 
+@media (min-width: 660px) {
+  .wrapper_mobile {
+    width: 660px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper_mobile {
+    width: 1200px;
+  }
+}
+
+
+//=====================================header=======================
+.app {
+  position: relative;
+}
 .header {
   background-color: rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-}
-.header__row {
+  height: 66px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
 }  
 
 .menu-nav a {
@@ -61,11 +80,53 @@ img {
   font-size: 18px;
   line-height: 32px;
 }
+.header__logo_tablet,
+.header__logo_desktop,
+.menu-nav {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .header {
+    height: 110px;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__logo_tablet {
+    display: block;
+  }
+}
 
 @media (min-width: 1200px) {
   .header {
     position: fixed;
     z-index: 1;
+    padding: 0px 130px;
+    width: 100%;
+  }
+  .header__logo_tablet,
+  .menu-btn span {
+    display: none;
+  }
+  .header__logo_desktop {
+    display: block;
+  }
+  .menu-nav {
+    display: block;
+    display: flex;
+    align-items: flex-start;
+  }
+  .menu-nav__link {
+    padding-left: 78px;
+  }
+  .menu-nav__link:hover {
+    text-decoration: underline;
+  }
+  .menu-nav a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
   }
 }
 
@@ -143,7 +204,6 @@ img {
   object-fit: cover;
 }
 
-
 .app__img {
   position: relative;
 }
@@ -158,6 +218,9 @@ img {
   line-height: 120%;
   text-align: center;
 }
+
+
+
 @media (min-width: 1200px) {
   
   .app {
@@ -256,6 +319,8 @@ img {
   font-size: 24px;
   font-weight: 300;
 }
+
+
 @media (min-width: 660px) {
   .item1__text {
     font-size: 40px;
@@ -300,22 +365,14 @@ img {
         background-position: center;
         height: 45vh;
 }
-/*
-  background:url("../img/iphone screen-1.png") no-repeat,
-        url("../img/iphone 1.png") no-repeat;
-        background-position: center;
-        height: 39vh;
-}*/
+
 .item2__img1 {
   background:url("../img/iphone screen-31.png") no-repeat,
         url("../img/iphone 1.png") no-repeat;
         background-position: center;
         height: 45vh;
 }
-  /*background:url("../img/iphone screen-2.png") no-repeat,
-        url("../img/iphone 1.png") no-repeat;
-        background-position: center;
-        height:39vh;*/
+  
 
 .item2__img2 {
   background:url("../img/iphone screen-31.png") no-repeat,
@@ -336,7 +393,8 @@ img {
     padding-bottom: 30px;
   }
   .item2__container_img {
-    width:100%;
+    width:50%;
+    padding-left: 10px;
   }
   .item2__img,  .container__item2 {
     width: 50%;
@@ -347,6 +405,19 @@ img {
   .item2__img1, .item2__img2 {
     display: none;
   }
+  .item2__img {
+    height: 47vh;
+    width: 100%;
+    margin-top: 110px;
+  }
+
+@media (min-width: 660px) {
+    .item2__title,
+    .item2__text {
+      padding-right: 10px;
+    }
+    
+}
 }
 @media (min-width: 1200px) {
   .item2__img1, .item2__img2 {
@@ -367,6 +438,7 @@ img {
     justify-content: space-around;
   }
   .item2__container_img {
+    width: 100%;
     display: flex;
     justify-content: space-around;
   }
@@ -382,8 +454,11 @@ img {
     font-size: 18px;
     line-height: 30px;
   }
-
+  .item2__img {
+    margin-top: none;    
+  }
 }
+
 
 //=======================effekt==============//
 .watch {
@@ -395,15 +470,18 @@ img {
             margin-top:54px;
             margin-left: 20px;
 }
-
+.effekt__item {
+  display: block;
+  width: 49%;
+}
 .effekt__row {
   display: flex;
-}
-.effekt__row, .watch {
-  width: 100%;
+  justify-content: space-between;
 }
 
-.effekt__title {
+
+.effekt__title,
+.effekt__title1 {
 padding-top: 102px;
 font-weight: 700;
 font-size: 30px;
@@ -434,10 +512,34 @@ text-align: left;
 }
 
 @media (min-width: 660px) {
-.effekt {
-  display: block;
+  .effekt {
+    display: block;
+  }
+  .effekt__title1 {
+    display: none;
+  }
+  .effekt__row {
+    padding-bottom: 112px;
+  }
 }
+@media (min-width: 1200px)  {
+  .effekt {
+    background-color: #F2F2F2;
+  }
+  .effekt__title1 {
+    display: block;
+  }
+  .effekt__title {
+    display: none;
+  }
+  .watch {
+    margin-left: 130px;
+  }
+  .effekt__row {
+    padding-bottom: 67px;
+  }
 }  
+    
 //========================slider======================================
 .wrapper__slider {
   text-align: center;
