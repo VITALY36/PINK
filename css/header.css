@@ -1,0 +1,116 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 66px;
+  position: fixed;
+  width: 100%;
+}
+
+.menu-nav {
+  padding: 0px 20px;
+}
+
+.menu-nav__list {
+  display: flex;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.menu-nav a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav__toggle {
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 4px;
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 0 10px 0 0 white, 0 20px 0 0 white;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 4px;
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 4px;
+  background-color: #d22856;
+  opacity: 0.3;
+  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+  opacity: 0.3;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  left: auto;
+  right: 0;
+}
+
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 18px;
+  width: 23px;
+  height: 2px;
+  background-color: #F2F2F2;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:hover::after {
+  background: #d22856;
+}
+
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  background: #d22856;
+  opacity: 0.3;
+}

@@ -46,18 +46,69 @@ img {
 
 @media (min-width: 660px) {
   .wrapper_mobile {
-    width: 660px;
+    min-width: 660px;
   }
 }
 @media (min-width: 1200px) {
   .wrapper_mobile {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
 
 //=====================================header=======================
-.app {
+
+
+@import "header.scss";
+
+@media (min-width: 660px) {
+  .header {
+    height: 110px;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__logo_tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    position: fixed;
+    z-index: 1;
+    padding: 0px 130px;
+    width: 100%;
+  }
+  .header__logo_tablet,
+  .menu-btn span {
+    display: none;
+  }
+  .header__logo_desktop {
+    display: block;
+  }
+  .menu-nav {
+    display: block;
+    display: flex;
+    align-items: flex-start;
+  }
+  .menu-nav__link {
+    padding-left: 78px;
+  }
+  .menu-nav__link:hover {
+    text-decoration: underline;
+  }
+  .menu-nav a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+
+
+
+
+/*.app {
   position: relative;
 }
 .header {
@@ -128,13 +179,13 @@ img {
     font-weight: 400;
     line-height: 18px;
   }
-}
+}*/
 
 
 //================Бургер================================//
 
 
-.menu-btn {
+/*.menu-btn 
   display: block;
   width: 50px;
   height: 24px;
@@ -156,10 +207,10 @@ img {
   background-color: rgba(210, 40, 86, 1);
 }
 .menu-btn span:before:hover {
-  background-color: rgba(210, 40, 86, 1)
+  background-color: rgba(210, 40, 86, 1);
 }
 .menu-btn span::after:hover {
-  background-color: rgba(210, 40, 86, 1)
+  background-color: rgba(210, 40, 86, 1);
 }
 
 .menu-btn span::before,
@@ -180,16 +231,16 @@ img {
   //======================Бургер-Крестик===============================//
 
 
-.menu-btn_active span {
+.menu-btn_active span 
   height: 0;
 }
 
-.menu-btn_active span::before {
+.menu-btn_active span::before 
   transform: rotate(45deg);
 }
-.menu-btn_active span::before {
+.menu-btn_active span::before 
   transform: rotate(-45deg);
-}
+}*/
 
 //===========================Блок1 app=========================//
 
@@ -232,6 +283,7 @@ img {
     height: 100vh;
     object-fit: cover;
     position:relative;
+  
   }
   .app__title {
     display: none;

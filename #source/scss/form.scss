@@ -5,8 +5,10 @@
 
 .app__form {
   background: url('../img/back-mobile.png') no-repeat;
-  width: 15vw;
-  height: 25vh;
+  //width: 320px;
+  height: 237px;
+  background-size: cover;
+  background-position: center;
 }
 .form__title {
   position: absolute; 
@@ -16,7 +18,23 @@
   line-height: 120%;
   text-align: center;
 }
- 
+
+@media (min-width: 660px) {
+  .app__form {
+    background: url('../img/back-tablet.png') no-repeat;
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app__form {
+    background: url('../img/back-desktop.jpg') no-repeat;
+    height: 394px;
+    background-size: cover;
+  }
+}
 
 //=====================================forms==============================
 
