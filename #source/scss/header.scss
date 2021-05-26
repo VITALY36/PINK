@@ -20,14 +20,17 @@
 }
 .menu-nav a {
   color: white;
-  font-weight: bold;
   font-size: 18px;
   line-height: 32px;
 }
 
-.main-nav__wrapper {
+
+.main-nav__wrapper,
+.header__logo_tablet,
+.header__logo_desktop { 
   display: none;
 }
+
 //======================burger=====================================
 
 .main-nav__toggle {
@@ -129,3 +132,57 @@
   background: rgba(210, 40, 86, 1);
   opacity: 0.3;
 }
+
+//==================breikpoints=======================
+
+
+@media (min-width: 660px) {
+  .header {
+    height: 110px;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__logo_tablet {
+    display: block;
+    padding-top: 5px;
+  }
+  .main-nav--closed
+  .main-nav__toggle::before  {
+    top: 40px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .header {
+    padding: 0px 130px;
+  }
+  
+  .header__logo_desktop {
+    display: block;
+    padding-top: 5px;
+  }
+  .main-nav__wrapper {
+    display: block;
+    padding-top: 17px;
+  }
+  .menu-nav__link {
+    padding-left: 78px;
+  }
+  .menu-nav__link:hover {
+    text-decoration: underline;
+  }
+
+  .menu-nav__list {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .main-nav__toggle,
+  .header__logo_tablet  {
+    display: none;
+  }
+}
+    
+    
