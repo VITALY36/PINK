@@ -10,28 +10,51 @@
 <body>
   <div class="wrapper_mobile">
     <div class="container__photo">
-      <header class="header">
-        <div class="header__row">
-          <div class="header__logo">
-            <img src="img/pink.png" alt="">
-          </div>
-          <div class="burger">
-            <div class="menu-block">
-              <a href="#" class="menu-btn">
-                <span></span>
-              </a>
-                
-              <nav class="menu-nav">
-                <a class="menu-nav__link" href="#">Главная</a>
-                <a class="menu-nav__link">Фотографии</a>
-                <a class="menu-nav__link" href="#">Конкурс</a>
-                <a class="menu-nav__link" href="#">HTML Academy</a>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header>
+<header class="header">
+      
+  <nav class="menu-nav main-nav--opened main-nav--nojs">
 
+    <div class="header__logo">
+      <a href=""><img src="img/pink.png" alt=""></a>
+    </div>
+      
+    <div class="header__logo_tablet">
+      <a href=""><img src="img\logotype-white-tablet.png" alt=""></a>
+    </div>
+
+    <div class="header__logo_desktop">
+      <a href=""><img src="img\logotype-white-desktop.png" alt=""></a>
+    </div>
+
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+
+    <div class="main-nav__wrapper">
+      <ul class="menu-nav__list site-list">
+
+        <li class="site-list__item site-list__item-active">
+          <a class="menu-nav__link" href="index.html">Главная</a>
+        </li>
+
+        <li class="site-list__item site-list__item-active">
+          <a class="menu-nav__link" href="photo.html">Фотографии</a>
+        </li>
+
+        <li class="site-list__item site-list__item-active">
+          <a class="menu-nav__link" >Конкурс</a>
+        </li>
+
+        <li class="site-list__item site-list__item-active">
+          <a class="menu-nav__link" href="#">HTML Academy</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </nav>
+
+</header>   
       <section class="photo app__form">
         <div class="photo__image app__img">
           <div class="photo__title">Фотографии<br>пользователей</div>
