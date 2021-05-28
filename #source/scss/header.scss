@@ -156,24 +156,35 @@
   padding: 15px 0px;
 }
 
-  
 .main-nav--opened 
 .menu-nav__link:hover {
   text-decoration: none;
 }
-
-
+  
 .menu-nav {
   display: block;
-  //background-color: #283645;
 }
 
+.main-nav--opened{
+  background-color: #283645; 
+}
+
+.main-nav--nojs 
+.main-nav__toggle {
+  //display: none;
+}  
+.main-nav--nojs
+.main-nav__wrapper {
+
+}
 
   
 //==================breikpoints=======================
 
 
 @media (min-width: 660px) {
+
+
   .header {
     height: 110px;
   }
@@ -183,6 +194,9 @@
   .header__logo_tablet {
     display: block;
     padding-top: 25px;
+  }
+  .header__logo_tablet a:hover {
+  
   }
   .main-nav--closed
   .main-nav__toggle::before  {
@@ -203,6 +217,7 @@
   .menu-nav__list {
     margin-top: 21px;
   }
+
 }
 
 
@@ -262,6 +277,11 @@
     text-transform: none;
     margin-top: 0px;
   } 
+  
+  .main-nav--opened {
+    background-color: transparent;
+  }
 }
+
 
   
