@@ -1,4 +1,4 @@
-
+@import "header.scss";
 
 //===============================app-form==================================
 
@@ -9,6 +9,7 @@
   height: 237px;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 .form__title {
   position: absolute; 
@@ -17,6 +18,9 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+  left: 0;
+  bottom: 51px;
+  padding: 0px 46px;
 }
 
 @media (min-width: 660px) {
@@ -26,6 +30,11 @@
     background-size: cover;
     background-position: center;
   }
+  .form__title {
+    font-size: 50px;
+    line-height: 68.09px;
+    bottom: 74px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -33,6 +42,11 @@
     background: url('../img/back-desktop.jpg') no-repeat;
     height: 394px;
     background-size: cover;
+    
+  }
+  .form__title  {
+    bottom: 104px;
+    padding: 0px 220px;
   }
 }
 
@@ -42,10 +56,23 @@
   font-size: 14px;
   line-height: 30px;
   color: rgba(40, 54, 69, 1);
-  padding-top: 54px;
-  padding-bottom: 55px;
+  padding: 55px 20px;
   text-align: center;
 }
+
+@media (min-width: 660px) {
+  .forms_p {
+  font-size: 18px;
+  padding: 100px 85px;
+  }
+}
+@media (min-width: 1200px) {
+  .forms_p {
+    padding: 100px 222px;
+    }
+}
+
+//===================================================================================
 
 .familia {
   border: 2px solid rgba(229, 229, 229, 1);
@@ -81,9 +108,15 @@
 
 .labels {
   color: rgba(210, 40, 86, 1);
+}
   
+@media (min-width: 660px) {
+
 }
 
+@media (min-width: 1200px) {
+  
+}
 
 //========================checkboxs row=======================
 
@@ -272,5 +305,5 @@
   text-transform: uppercase;
 }
 
-
+@import "footer.scss";
   

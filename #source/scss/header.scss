@@ -20,7 +20,21 @@
   padding-top: 20px;
   padding-left: 20px;
 }
+//========================SVG==========================
 
+.head__logo svg {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.head__logo svg:hover {
+  fill: rgba(210, 40, 86, 1);
+}
+
+.head__logo svg:active {
+  fill:  rgba(255, 255, 255, 0.3);
+}
+
+//===================================
 
 .menu-nav a {
   color: white;
@@ -33,6 +47,14 @@
 .header__logo_tablet,
 .header__logo_desktop { 
   display: none;
+}
+
+.site-list__item a:hover {
+  color:rgba(210, 40, 86, 1)
+}
+
+.site-list__item a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 //======================burger=====================================
@@ -169,16 +191,7 @@
   background-color: #283645; 
 }
 
-.main-nav--nojs 
-.main-nav__toggle {
-  //display: none;
-}  
-.main-nav--nojs
-.main-nav__wrapper {
 
-}
-
-  
 //==================breikpoints=======================
 
 
@@ -195,9 +208,11 @@
     display: block;
     padding-top: 25px;
   }
-  .header__logo_tablet a:hover {
+  .header__logo_tablet:hover {
+    
+    }
   
-  }
+
   .main-nav--closed
   .main-nav__toggle::before  {
     top: 40px;
@@ -217,9 +232,7 @@
   .menu-nav__list {
     margin-top: 21px;
   }
-
 }
-
 
 @media (min-width: 1200px) {
   
@@ -233,11 +246,17 @@
   }
   
   .menu-nav__link {
-    padding-left: 78px;
+    margin-left: 78px;
+    padding-bottom: 10px;
   }
+
   .menu-nav__link:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid  rgba(210, 40, 86, 1);
   }
+  .menu-nav__link:active {
+    border-bottom: 2px solid  rgba(255, 255, 255, 0.3);
+  }
+
   .menu-nav__list {
     font-size: 18px;
     font-weight: 400;
@@ -281,6 +300,7 @@
   .main-nav--opened {
     background-color: transparent;
   }
+  
 }
 
 
