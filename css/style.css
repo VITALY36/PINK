@@ -10,6 +10,14 @@
   box-sizing: border-box;
 }
 
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
 nav, footer, header, aside {
   display: block;
 }
@@ -400,14 +408,30 @@ h1, h2, h3, h4, h5, h6 {
     padding: 100px 222px;
   }
 }
+.appointment-item__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment-item {
+  position: relative;
+}
+
+.labels {
+  color: #d22856;
+  font-size: 14px;
+  position: absolute;
+  left: 15px;
+}
+
 .familia {
   border: 2px solid #e5e5e5;
-  padding: 15px 61px 15px 11px;
+  padding: 23px 83px 23px 20px;
   border-radius: 3px;
-  margin-top: 17px;
-  margin-bottom: 29px;
   font-size: 18px;
-  line-height: 30px;
+  margin-top: 29px;
+  margin-bottom: 29px;
 }
 
 .familia:hover {
@@ -422,23 +446,39 @@ h1, h2, h3, h4, h5, h6 {
   color: #283645;
 }
 
-.appointment-item__row {
-  text-align: center;
-  padding-bottom: 15px;
-}
+@media (min-width: 660px) {
+  .familia {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
 
-.appointment-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 35px;
-}
+  .appointment-item__row {
+    display: flex;
+    gap: 56px;
+    align-items: flex-start;
+    padding: 0px 20px;
+  }
 
-.labels {
-  color: #d22856;
-}
+  .appointment-item {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
 
+  .labels {
+    left: 0px;
+    position: static;
+    padding-right: 20px;
+  }
+
+  .third__blocks {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .checkboxs__row {
+  margin-top: 25px;
   background: #f2f2f2;
   padding-bottom: 1px;
 }
@@ -518,6 +558,20 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 30px;
 }
 
+@media (min-width: 660px) {
+  .radios {
+    background-color: white;
+    padding: 0px 20px;
+  }
+
+  .radio__row {
+    border: 2px solid #e5e5e5;
+  }
+
+  .checkboxs__title br {
+    display: none;
+  }
+}
 .gadjets {
   display: block;
   margin-bottom: 1.7em;

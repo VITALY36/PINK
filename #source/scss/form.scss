@@ -5,7 +5,6 @@
 
 .app__form {
   background: url('../img/back-mobile.png') no-repeat;
-  //width: 320px;
   height: 237px;
   background-size: cover;
   background-position: center;
@@ -62,65 +61,103 @@
 
 @media (min-width: 660px) {
   .forms_p {
-  font-size: 18px;
-  padding: 100px 85px;
+    font-size: 18px;
+    padding: 100px 85px;
   }
 }
 @media (min-width: 1200px) {
   .forms_p {
     padding: 100px 222px;
-    }
+  }
 }
 
 //===================================================================================
 
+.appointment-item__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.appointment-item {
+  position: relative;
+}
+.labels {
+  color:rgba(210, 40, 86, 1);
+  font-size: 14px;
+  position: absolute;
+  left: 15px;
+}
+
 .familia {
   border: 2px solid rgba(229, 229, 229, 1);
-  padding: 15px 61px 15px 11px;
+  padding: 23px 83px 23px 20px;
   border-radius: 3px;
-  margin-top: 17px;
-  margin-bottom: 29px;
   font-size: 18px;
-  line-height: 30px;
+  margin-top: 29px;
+  margin-bottom: 29px;
 }
 
 .familia:hover {
   border: 2px solid rgba(40, 54, 69, 1);
 }
 .familia:active {
-  border: 2px solid rgba(210, 40, 86, 1)
+  border: 2px solid rgba(210, 40, 86, 1);
 }
+
 .familia::placeholder {
   color: rgba(40, 54, 69, 1);
 }
 
-.appointment-item__row {
-  text-align: center;
-  padding-bottom: 15px;
-}
-
-.appointment-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 35px;
-}
-
-.labels {
-  color: rgba(210, 40, 86, 1);
-}
-  
 @media (min-width: 660px) {
+
+  .familia {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .appointment-item__row {
+    display:flex;
+    gap: 56px;
+    align-items: flex-start;
+    padding: 0px 20px;
+    
+  }
+
+  .appointment-item {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+
+  .labels {
+    left: 0px;
+    position: static;
+    padding-right: 20px;
+  }
+  .third__blocks {
+    display: flex;
+    flex-direction: column-reverse;
+    //align-items: center;
+  }
 
 }
 
 @media (min-width: 1200px) {
   
 }
+  
+
+//=========================third__block=============================
+
+
+  
 
 //========================checkboxs row=======================
 
 .checkboxs__row {
+  margin-top: 25px;
   background: rgba(242, 242, 242, 1);
   padding-bottom: 1px;
 }
@@ -137,7 +174,6 @@
 
 
 .wrapper__checkbox {
-  
   background: rgba(242, 242, 242, 1);
 }
 
@@ -159,7 +195,6 @@
   
   .check__input {
     position: absolute;
-    
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -172,7 +207,6 @@
     height: 2em;
     border-radius: 0.2em;
     background-color: white;
-    //box-shadow: 0 0 0 0.1em #4A90E2;
     border: 2px solid rgba(229, 229, 229, 1);
   }
   .check__box:hover {
@@ -195,6 +229,7 @@
   padding-top: 42px;
 }
 //======================radios==========================
+
 .radios {
   font-size: 14px;
   background: rgba(242, 242, 242, 1);
@@ -210,6 +245,25 @@
   line-height: 30px;
 }
 
+
+@media (min-width: 660px) {
+  .radios {
+    background-color:white;
+    padding: 0px 20px;
+    }
+
+  .radio__row {
+    border: 2px solid rgba(229, 229, 229, 1);  
+  }
+  .checkboxs__title {
+    br {
+      display: none;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  
+}
 
 
 //=========================radio buttons===================
