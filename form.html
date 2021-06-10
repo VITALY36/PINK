@@ -114,9 +114,12 @@
         <div class="third__blocks">
 
           <div class="checkboxs__row">
-                <div class="checkboxs__title">
-                  <h3>Ваши безбашенные<br>достижения в путешествии:</h3>
-                </div>
+
+              <fieldset class="checkbox__field">
+
+                <legend class="checkboxs__title">
+                  <h3>Ваши безбашенные <br>достижения в путешествии:</h3>
+                </legend>
 
                 <label class="check option">
                   <input class="check__input" type="checkbox" checked>
@@ -152,32 +155,38 @@
                   <input class="check__input" type="checkbox">
                   <span class="check__box"></span>
                   Разгромил отель
-                </label> 
+                </label>
 
               </fieldset>
           </div>
 
           <div class="telef">
-                <div class="appointment-item__row">
-                  <p class="appointment-item">
-                    <label class="labels">НОМЕР ТЕЛЕФОНА</label>
-                    <div><input class="familia"  type="tel" name="tel" value="" placeholder="Номер, пожалуйста"></div>
-                  </p>
-                  
-                  <p class="appointment-item">
-                    <label class="labels">АДРЕС ПОЧТЫ</label>
-                    <div><input class="familia" type="email" name="email" value="" placeholder="Введите почту *"></div>
-                  </p>
-                </div>  
+
+            <fieldset class="appointment-item__row1">
+                <legend class="telef__legend">КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
+
+                <div class="telef__cont">
+
+                  <div class="appointment-item1 telef__item1">
+                    <label class="labels telef__lab">НОМЕР ТЕЛЕФОНА</label>
+                    <input class="familia telef__fam" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
+                  </div>
+                      
+                  <div class="appointment-item1 telef__item2">
+                    <label class="labels telef__lab">АДРЕС ПОЧТЫ</label>
+                    <input class="familia  telef__fam1" type="email" name="email" value="" placeholder="Введите почту *">
+                  </div>
+
+                </div>
+            </fieldset>
+
           </div>
 
                 
           <div class="radios">
 
             <fieldset class="radio__row">
-              <legend class="checkboxs__title">
-              С каким приложением <br>путешествовали?
-              </legend>
+              <legend class="checkboxs__title"> С каким приложением <br>путешествовали?</legend>
 
               <label class="gadjets">
                 <input class="radio__input" type="radio" name="gadget" checked="checked">
@@ -202,20 +211,20 @@
         </div>
 
         <div class="emotions">
-              <div class="container_mobile">
+          <fieldset class="container_mobile">
 
-                <div class="emotions__title"><h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3></div>
+            <legend class="emotions__title"><h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3></legend>
 
-                <div class="emotios__row">
-                  <div class="emotions__text">Можно прям в красках, не стесняясь в выражениях</div>
-                </div>
+            <div class="emotios__row">
+              <div class="emotions__text">Можно прям в красках, не стесняясь в выражениях</div>
+            </div>
 
-                <button class="emotions__button">ОТПРАВИТЬ ФОРМУ</button>
+            <button class="emotions__button">ОТПРАВИТЬ ФОРМУ</button>
                 
-                  <p><span class="red__field">*</span>
-                    <span class="field__stroke">-обязательные поля</p></span>
+              <p><span class="red__field">*</span>
+                <span class="field__stroke">-обязательные поля</p></span>
 
-              </div>  
+          </fieldset>  
         </div>
 
       </form>
