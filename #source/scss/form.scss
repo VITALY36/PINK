@@ -17,7 +17,7 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  left: 0;
+  //left: 0;
   bottom: 51px;
   padding: 0px 46px;
 }
@@ -58,11 +58,17 @@
   padding: 55px 20px;
   text-align: center;
 }
+.forms_p1 {
+  display:none;
+}
 
 @media (min-width: 660px) {
   .forms_p {
     font-size: 18px;
     padding: 100px 85px;
+  }
+  .forms_p1 {
+    display:block;
   }
 }
 @media (min-width: 1200px) {
@@ -70,8 +76,59 @@
     padding: 100px 222px;
   }
 }
+//=========================form__row=============================
+.appointment-item__row {
+  grid-area: air;
+}
+.checkboxs__row {
+  grid-area: cr;
+}
+.telef  {
+  grid-area: tf;
+}
+.radios {
+  grid-area: rs;
+}
+.form__row {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-areas:
+      "air"
+      "cr"
+      "tf"
+      "rs";
+}
 
-//===================================================================================
+@media (min-width: 660px) {
+  .form__row {
+    grid-template-areas:
+      "air"
+      "rs"
+      "tf"
+      "cr";
+  }
+}
+
+@media (min-width: 1200px) {
+  .form__row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "air rs"
+      "tf tf"
+      "cr cr";
+    padding: 0px 100px;
+  }
+  .radios {
+    margin-left: 16px;
+    margin-top: -50px;
+  }
+  .appointment-item__row {
+    margin-right: 16px;
+  }
+}
+//========================================appointment-item__row==============================
 
 .appointment-item__row {
   display: flex;
@@ -91,7 +148,7 @@
 
 .familia {
   border: 2px solid rgba(229, 229, 229, 1);
-  padding: 23px 83px 23px 20px;
+  padding: 17px 83px 17px 20px;
   border-radius: 3px;
   font-size: 18px;
   margin-top: 29px;
@@ -119,7 +176,7 @@
 
   .appointment-item__row {
     display:flex;
-    gap: 56px;
+    gap: 25px;
     align-items: flex-start;
     padding: 0px 20px;
     align-items: stretch;
@@ -135,26 +192,16 @@
     left: 0px;
     position: static;
     padding-right: 20px;
+    padding-bottom: 25px;
   }
-  .third__blocks {
-    display: flex;
-    flex-direction: column-reverse;
-    //align-items: center;
-  }
-
-}
-
-@media (min-width: 1200px) {
-  
 }
   
-
-//=========================third__block=============================
-
+  @media (min-width: 1200px) {
+  
+  }
 
   
-
-//========================checkboxs row=======================
+  //========================checkboxs row=======================
 
 .checkboxs__row {
   margin-top: 25px;
@@ -170,6 +217,17 @@
   line-height: 18px;
   padding-bottom: 44px;
   text-align: center;
+}
+
+@media (min-width: 660px) {
+  
+}
+
+@media (min-width: 1200px) {
+  .checkbox_row {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 //======================checkboxs===============================
@@ -409,9 +467,9 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 26px;
+ // margin-bottom: 26px;
   padding: 0px 20px;
-  }
+}
 
 .emotions__title {
   color: rgba(210, 40, 86, 1);
@@ -419,6 +477,7 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  margin-bottom: 22px;
 }
 
 .emotions__text {
@@ -452,17 +511,51 @@
 .field__stroke {
   text-transform: uppercase;
 }
+.field_stroke1 {
+  display: none;
+}
 
 @media (min-width: 660px) {
+  
   .container_mobile {
+    width: 100%;
+  }
+  .emotions__row  {
     border: 2px solid rgba(229, 229, 229, 1);
+  }
+  .emotions__text {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 53px;
+    margin-top: 20px;
+  }
+  .emotions__button {
+    margin-top: 0px;
+  }
+  .emotions__row1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+  }
+  .emotions__cont {
+    padding-top: 28px;
   }
 }
 
 @media (min-width: 1200px) {
-  
+  .emotions {
+    padding: 0px 120px;
+  }
+  .emotions__text {
+    text-align: left;
+  }
+  .field_stroke1 {
+    display: inline-block;
+  }
+  .emotions__button {
+    margin-bottom: 0px;
+  }
 }
-
 
 @import "footer.scss";
   

@@ -5,14 +5,13 @@
 
 
 //============================Общие стили===========================
-body {
-  background-color: aqua;
-}
+
 .wrapper_mobile {
   font-family: 'Open Sans';
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-width: 320px;
   margin: 0px auto;
   color: rgba(40, 54, 69, 1);
@@ -44,10 +43,10 @@ img {
   height: auto;
 }
 
-
 @media (min-width: 660px) {
   .wrapper_mobile {
     min-width: 660px;
+    align-items: stretch;
   }
 }
 @media (min-width: 1200px) {
@@ -66,28 +65,22 @@ img {
 //===========================Блок1 app=========================//
 
 
-/*.app {
-  position: relative;
-}*/
+
 
 .app {
-  background:url('../img/screen-mobile.png'),
-            url('../img/phone.png') 1px 175px,
-            url('../img/back-mobile.png');
+  background:url('../img/screen-mobile.png') 104px 208px,
+            url('../img/phone.png') bottom left,
+            url('../img/back-mobile.jpg') center 100%/cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 54vh;
-  object-fit: cover;
-}
-
-.app__img {
+  height: 462px;
   position: relative;
-}
+} 
+
 
 .app__title {
   position: absolute;
-  top: 89px;
-  left: 47px;
+  //top: 89px;
+  //left: 47px;
   font-weight: 300;
   color:white;
   font-size: 24px;
@@ -96,17 +89,24 @@ img {
 }
 
 
+@media (min-width: 660px) {
+  .app {
+    background:url('../img/screen tablet.png') 371px 237px,
+              url('../img/phone tablet.png') bottom,
+              url('../img/back-tablet.png') center 100%/cover;
+  background-repeat: no-repeat;
+  height: 729px;
+  }
+}
 
 @media (min-width: 1200px) {
   
   .app {
-    background:url('../img/screen-desktop.png') 870px 240px,
-              url('../img/phone.jpg') 300px 175px,
-              url('../img/back-desktop.jpg');
+    background:url('../img/screen-desktop.png') 720px 272px,
+              url('../img/phone-desktop.png') bottom,
+              url('../img/back-desktop.jpg') center 100%/cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    height: 853px;
     position:relative;
   }
   

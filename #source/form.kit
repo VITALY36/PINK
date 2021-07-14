@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class="wrapper_mobile">
-    
+  
+  <div class="wrapper_mobile">   
     <!--@import "header.kit"-->
     
     <main>
@@ -21,78 +21,87 @@
 
       <section class="forms">
         <div class="forms_p">Поделитесь своей историей и получите шанс выиграть ценный
-            приз — 1000 миль на вашу бонусную карту!
+            приз — 1000 миль на вашу бонусную карту!<span class="forms_p1">
+              Пожалуйста, заполните форму ниже:
+            </span>
         </div>
       </section>  
-      
+     
       <form class="FIO" action="https://echo.htmlacademy.ru" method="post">
-            
-        <div class="appointment-item__row">
+        <div class="form__row"> 
 
-          <div class="appointment-item">
-            <label class="labels">ФАМИЛИЯ:</label>
-            <input class="familia" type="text" name="surname" placeholder="Укажите фамилию *">
+          <div class="appointment-item__row">
+
+            <div class="appointment-item">
+              <label class="labels">ФАМИЛИЯ:</label>
+              <input class="familia" type="text" name="surname" placeholder="Укажите фамилию *">
+            </div>
+                
+            <div class="appointment-item">
+              <label class="labels">ИМЯ:</label>
+              <input class="familia"  type="text" name="name"  placeholder="Введите ваше имя *">
+            </div>
+
+            <div class="appointment-item">
+              <label class="labels">ОТЧЕСТВО:</label>
+              <input class="familia" type="text" name="middlename"  placeholder="Ну и отчество тоже">
+            </div>
+
           </div>
-              
-          <div class="appointment-item">
-            <label class="labels">ИМЯ:</label>
-            <input class="familia"  type="text" name="name"  placeholder="Введите ваше имя *">
-          </div>
-
-          <div class="appointment-item">
-            <label class="labels">ОТЧЕСТВО:</label>
-            <input class="familia" type="text" name="middlename"  placeholder="Ну и отчество тоже">
-          </div>
-
-        </div>
-
-        <div class="third__blocks">
 
           <div class="checkboxs__row">
-
-              <fieldset class="checkbox__field">
+            <fieldset class="checkbox__field">
 
                 <legend class="checkboxs__title">
                   <h3>Ваши безбашенные <br>достижения в путешествии:</h3>
                 </legend>
 
-                <label class="check option">
-                  <input class="check__input" type="checkbox" checked>
-                  <span class="check__box" ></span>
-                  Сделал селфи с акулой 
-                </label>  
+                <div class="checkbox_row">
 
-                <label class="check option">
-                  <input class="check__input" type="checkbox" checked>
-                  <span class="check__box"></span>
-                  Обгорел на пляже
-                </label>
+                  <div class="checkbox_row1">
+                    <label class="check option">
+                      <input class="check__input" type="checkbox" checked>
+                      <span class="check__box" ></span>
+                      Сделал селфи с акулой 
+                    </label>  
+                  
+                    <label class="check option">
+                      <input class="check__input" type="checkbox" checked>
+                      <span class="check__box"></span>
+                      Обгорел на пляже
+                    </label>
+                  </div>
 
-                <label class="check option">  
-                  <input class="check__input" type="checkbox">
-                  <span class="check__box"></span>
-                  Видел Чака Норриса
-                </label>
+                  <div class="checkbox_row2">  
+                    <label class="check option">  
+                      <input class="check__input" type="checkbox">
+                      <span class="check__box"></span>
+                      Видел Чака Норриса
+                    </label>
+                    
+                    <label class="check option">            
+                      <input class="check__input" type="checkbox">
+                      <span class="check__box"></span>
+                      Накупил сувениров
+                    </label>
+                  </div> 
 
-                <label class="check option">            
-                  <input class="check__input" type="checkbox">
-                  <span class="check__box"></span>
-                  Накупил сувениров
-                </label>
-                
-                <label class="check option">          
-                  <input class="check__input" type="checkbox"  checked>
-                  <span class="check__box"></span>
-                  Удержал башню
-                </label>
+                  <div class="checkbox_row3">
+                    <label class="check option">          
+                      <input class="check__input" type="checkbox"  checked>
+                      <span class="check__box"></span>
+                      Удержал башню
+                    </label>
+                    
+                    <label class="check option"> 
+                      <input class="check__input" type="checkbox">
+                      <span class="check__box"></span>
+                      Разгромил отель
+                    </label>
+                  </div>  
+                </div>
 
-                <label class="check option"> 
-                  <input class="check__input" type="checkbox">
-                  <span class="check__box"></span>
-                  Разгромил отель
-                </label>
-
-              </fieldset>
+            </fieldset>
           </div>
 
           <div class="telef">
@@ -117,7 +126,6 @@
 
           </div>
 
-                
           <div class="radios">
 
             <fieldset class="radio__row">
@@ -142,24 +150,27 @@
               </label>
             </fieldset>  
           </div>
-
+        
         </div>
+        
 
         <div class="emotions">
-          <fieldset class="container_mobile">
+          
+          <div class="container_mobile">
 
-            <legend class="emotions__title"><h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3></legend>
-
-            <div class="emotios__row">
+            <fieldset class="emotions__row">
+              <legend class="emotions__title"><h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3></legend>
               <div class="emotions__text">Можно прям в красках, не стесняясь в выражениях</div>
+            </fieldset>
+
+            <div class="emotions__row1">
+              <button class="emotions__button">ОТПРАВИТЬ ФОРМУ</button>
+              <div class="emotions__cont"><span class="red__field">*</span>
+                <span class="field__stroke">-обязательные <span class="field_stroke1">для заполнения</span> поля</span></div>
             </div>
 
-            <button class="emotions__button">ОТПРАВИТЬ ФОРМУ</button>
-                
-              <p><span class="red__field">*</span>
-                <span class="field__stroke">-обязательные поля</p></span>
+          </div>
 
-          </fieldset>  
         </div>
 
       </form>
