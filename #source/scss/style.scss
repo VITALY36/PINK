@@ -153,7 +153,10 @@ img {
     font-size: 40px;
     line-height: 48px;
     width: 230px;
+    position: absolute;
     top: 200px;
+    z-index: 2;
+    left: 85px;
   }
 } 
 
@@ -161,8 +164,10 @@ img {
   .app__title {
     font-size: 50px;
     line-height: 68.09px;
-    left: 190px;
+    position: absolute;
+    left: 200px;
   }
+  
 }
 
 //========================main-link=======================//
@@ -216,13 +221,10 @@ img {
   left: 10px;
   z-index: 2;
 }
-.app__title {
-  left: 65px;
-}
+
 .butt__app {
   padding: 21px 38px;
-}
-
+  }
 }
 
 @media (min-width: 1200px) {
@@ -241,9 +243,7 @@ img {
   .app__text {
     font-size: 21px;
   }
-  .app__title {
-    left: 210px;
-  }
+  
 
 
 //==============================item1===============================//
@@ -272,7 +272,6 @@ img {
 
 .item1__block {
   fill: rgba(242, 242, 242, 1);
-  margin-bottom: 0px;
 }
 
 @media (min-width: 660px) {
@@ -283,9 +282,7 @@ img {
   .item1__row {
   max-width: 100%;
 }
-  .ittext1  {
-    padding-bottom: 0px;
-}
+
 }
 @media (min-width: 1200px) {
   .item1__text {
@@ -302,7 +299,7 @@ img {
   font-weight: 700;
   line-height: 24px;
   font-size: 18px;
-  padding-top: 53px;
+  padding-top: 46px;
   padding-bottom: 24px;
 }
 .item2__text {
@@ -311,115 +308,134 @@ img {
   color: rgba(40, 54, 69, 1);
 }
 .item2__row {
-  margin-top: -2px;
+  margin-top: -3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   background-color: #F2F2F2;
   padding: 0px 20px;
+  margin-bottom: 40px;
+}
+
+.text_item {
+  padding-bottom: 48px;
 }
 
 
 .item2__img {
-  background:url("../img/iphone screen-31.png") no-repeat,
-        url("../img/iphone 1.png") no-repeat;
+  background:url("../img/iphone screen-3.png") no-repeat,
+        url("../img/iphone 3.jpg") no-repeat;
         background-position: center;
-        height: 45vh;
+        height: 320px;
 }
 
-.item2__img1 {
-  background:url("../img/iphone screen-31.png") no-repeat,
-        url("../img/iphone 1.png") no-repeat;
-        background-position: center;
-        height: 45vh;
-}
-  
-
-.item2__img2 {
-  background:url("../img/iphone screen-31.png") no-repeat,
-        url("../img/iphone 1.png") no-repeat;
-        background-position: center;
-        height: 45vh;
-}
-.item2__img1, .item2__img2 {
-  display: none;
-}
 
 @media (min-width: 660px) {
+  .item2__row {
+    flex-direction: row-reverse;
+  }
+  .item2__img { 
+    background:url("../img/iphone screen-3 tablet.png") no-repeat,
+        url("../img/iphone 3 tablet.jpg") no-repeat;
+        background-position: center;
+        height: 547px;
+        margin-top: -48px;
+        margin-right: 50px;
+      }
+  .container__item2 {
+    width: 50%;
+    text-align: left;
+    margin-top: -40px;
+  }
+  .item2__container_img {
+    width: 50%;
+  }
+      
+
+    }
+
+
+    
+
+/*
+.item2__img1, .item2__img2 
+  display: none;
+
+
+@media min-width: 660px) {
   .item2__img, .item2__img1, .item2__img2 {
     margin-top: 30px;
-  }
+  
   .item2__row {
     flex-direction: row-reverse;
     padding-bottom: 30px;
-  }
+  
   .item2__container_img {
     width:50%;
     padding-left: 10px;
-  }
+  
   .item2__img,  .container__item2 {
     width: 50%;
-  }
+  
   .item2__title, .item2__text {
     text-align: left;
-  }
+  
   .item2__img1, .item2__img2 {
     display: none;
-  }
+  
   .item2__img {
     height: 47vh;
     width: 100%;
     margin-top: 110px;
-  }
+  
 
-@media (min-width: 660px) {
+@media (min-width: 660px) 
     .item2__title,
     .item2__text {
       padding-right: 10px;
-    }
     
-}
-}
-@media (min-width: 1200px) {
+    
+
+@media min-width: 1200px) {
   .item2__img1, .item2__img2 {
     display: block;
-  }
+  
   .item2__row {
     flex-direction: column-reverse;
-  }
+  
   .item2__1 {
     width: 252px;
-  }
+  
   .item2__img, .item2__img1, .item2__img2 {
     width: 100%;
-  }
+  
   .container__item2 {
     display: flex;
     width: 100%;
     justify-content: space-around;
-  }
+  
   .item2__container_img {
     width: 100%;
     display: flex;
     justify-content: space-around;
-  }
+  
   .item2__title, .item2__text {
     text-align: center;
-  }
-  .item2__title {
+  
+  .item2__title 
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
-  }
-  .item2__text  {
+  
+  .item2__text  
     font-size: 18px;
     line-height: 30px;
-  }
-  .item2__img {
+  
+  .item2__img 
     margin-top: none;    
-  }
-}
+  
+}*/
 
 
 //=======================effekt==============//
