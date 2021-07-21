@@ -21,16 +21,13 @@
   padding-left: 20px;
 }
 //========================SVG==========================
-
-.head__logo svg {
-  fill: rgba(255, 255, 255, 1);
+.head__log {
+  fill: white;
 }
-
-.head__logo svg:hover {
+.head__log:hover {
   fill: rgba(210, 40, 86, 1);
 }
-
-.head__logo svg:active {
+.head__log:active {
   fill:  rgba(255, 255, 255, 0.3);
 }
 
@@ -209,9 +206,8 @@
     padding-top: 25px;
   }
   .header__logo_tablet:hover {
-    
-    }
-  
+
+}
 
   .main-nav--closed
   .main-nav__toggle::before  {
@@ -300,7 +296,6 @@
   .main-nav--opened {
     background-color: transparent;
   }
-  
 }
 
 
