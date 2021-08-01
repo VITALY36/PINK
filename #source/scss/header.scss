@@ -14,13 +14,13 @@
   justify-content: space-between;
 }
 
-.header__logo,
-.header__logo_tablet,
-.header__logo_desktop {
+.header__logo {
   padding-top: 20px;
   padding-left: 20px;
 }
+
 //========================SVG==========================
+
 .head__log {
   fill: white;
 }
@@ -204,10 +204,9 @@
   .header__logo_tablet {
     display: block;
     padding-top: 25px;
+    padding-left: 25px;
   }
-  .header__logo_tablet:hover {
-
-}
+  
 
   .main-nav--closed
   .main-nav__toggle::before  {
@@ -260,7 +259,8 @@
   }
   
   .main-nav__toggle,
-  .header__logo_tablet  {
+  .header__logo_tablet
+  {
     display: none;
   }
   .main-nav--closed {

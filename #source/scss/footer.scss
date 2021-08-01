@@ -5,25 +5,21 @@
 .footer {
   text-align: center;
 }
-.glass_red {
-  padding-right: 12px;
-}
-.footer__logo {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 41px;
+.footer__row1 {
+display: flex;
+flex-direction: column;
+padding-top: 40px;
 }
 
-.logo_grey {
-  font-size: 30px;
-  text-transform: uppercase;
-  color:rgba(40, 54, 69, 1)
+.footer__logo {
+  display: none;
 }
-.logo_grey a {
-  color: rgba(40, 54, 69, 1); 
+
+.footer__logo1 {
+  display: block;
+  padding-bottom: 40px;
 }
+
 .footer__row {
   display: flex;
   justify-content: center;
@@ -52,50 +48,55 @@
 }
 .footer__text {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items:  center;
-  padding-top: 30px;
   padding-bottom: 40px;
 }
 .footer__title {
-  padding-right: 15px;
-}
-.footer__img {
-  background: url("../img/html academy.png");
-  width: 27px;
-  height: 34px;
-}
-.footer__text {
-  display:flex;
-}
-.footer__title {
+  //padding-right: 15px;
   color:black;
 }
-@media (min-width: 660px) {
-  .footer__row1 {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    align-items: flex-end;
-  }
+.footer__img {
+  margin-left: 15px;
 }
-//=======================Интерактивность=====
 
+.foot__log {
+  fill: rgba(40, 54, 69, 1);
+}
+
+.foot__log:hover {
+  fill: #D22856;
+}
+
+.foot__log1 {
+  fill: #D22856;
+}
+
+.foot__log2 {
+  fill:rgba(40, 54, 69, 1);
+}
+.foot__log2:hover{
+  fill:#D22856;
+}
+
+.footer__img {
+  fill:#D22856;
+}
 
 .footer__img:hover {
-  background: url("../img/html academy black.png");
+  fill:rgba(40, 54, 69, 1);
 }
+
 .footer__img:active {
-  opacity:0.3;
+  opacity: 0.3;
 }
 
-.logo_grey:hover {
-  color: rgba(210, 40, 86, 1);
-}
 
-.logo_grey:active {
-  color: rgba(40, 54, 69, 1);
+//=======================Интерактивность===============================
+
+
+.foot__logo:active {
+  opacity: 0.3;
 }
 
 .footer__ellipse:hover {
@@ -104,17 +105,30 @@
 .footer__ellipse:active {
   opacity: 0.1;
 }
-.footer__logo:active {
-  opacity: 0.3;
-}
+
+
+
 
 @media (min-width: 660px) {
 
+  .footer__row1 {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 36px;
+  }
 }
 
 @media (min-width: 1200px) {
+  
   .footer {
     margin: 0px 100px;
   }
-  
+  .footer__logo {
+    display: block;
+  }
+  .footer__logo1 {
+    display: none;
+  }
 }
