@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
+  //min-width: 320px;
   margin: 0px auto;
   color: rgba(40, 54, 69, 1);
   background-color: white;
@@ -23,7 +23,7 @@
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  min-width: 280px;
+  //min-width: 280px;
   margin: 0px auto;
 }
 
@@ -49,6 +49,7 @@ img {
     align-items: stretch;
   }
 }
+
 @media (min-width: 1200px) {
   .wrapper_mobile {
     min-width: 1200px;
@@ -81,7 +82,6 @@ img {
 @media (min-width: 1200px) {
   .app {
     height: 853px;
-    //position: relative;
   }
 }
 

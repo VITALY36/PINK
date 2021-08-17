@@ -5,7 +5,8 @@
   align-items: center;
   text-align: center;
   margin: 0px auto;
-  min-width: 320px;
+  //min-width: 320px;
+  width: 100%;
 }
 
 
@@ -16,94 +17,121 @@
   text-align: center;
 }
 
-//===========================photo app__form===========================
+//===========================photo__sec===========================
+
+.photo__sec {
+  width: 100%;
+  height: 240px;
+  
+}
+
+.photo__sec img {
+  width: 100%;
+  //height: 240px;
+  //object-fit: cover; 
+  position: relative;
+}
 
 .photo__title {
+  position: absolute;
+  top: 102px;
+  left: 150px;
   color: white;
-  text-align: center;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
-  display: flex;
-  align-items: center;
-}
-.blog__title,.blog__title1,.blog__title2 {
   text-align: center;
-  padding: 0px 30px;
+}
+//=========================blog__title====================================
+
+.blog__title {
+  text-align: center;
+  padding: 0px 20px;
   font-size: 14px;
   line-height: 30px;
   padding-top: 54px;
   padding-bottom: 60px;
 }
+
+//==============================blog__image====================================
+
 .blog__image {
+  
+  width: 100%;
   background:url("../img/ПАНОРАМА ДНЯ.png") 180px 13px no-repeat,
-              url("../img/подложка.png") 160px 0 no-repeat,
-              url("../img/panorama-tablet.png") 0 0 no-repeat; 
-              height: 16vh;
-              width: 100%;
-              text-align: center;
-              margin: 0px auto;
+            url("../img/подложка.png") 160px 0 no-repeat;
+  }
+
+.blog__image img {
+  width: 100%;
 }
-.blog__title1 {
-  display: none;
-}
-.blog__title2 {
-  display: none;
-}
+
+
 
 
 @media (min-width: 660px) {
-  .container__photo {
-    min-width: 660px;
+
+  .photo__sec {
+    height: 440px;
   }
+
+  .photo__title {
+    top: 150px;
+    left: 250px;
+    font-size: 50px;
+    line-height: 68.09px;
+  }
+  .photo__sec img {
+    height: 440px;
+  }
+  
+  
   .blog__title {
-    display: none;
-  }
-  .blog__title2 {
-    display: none;
-  }
-  .blog__title1 {
-    display: block;
     font-size: 18px;
+    padding: 0px 80px;
+    padding-top: 100px;
+    padding-bottom: 85px;
   }
+  
   .blog__image {
-    background:url("../img/ПАНОРАМА ДНЯ.png") 519px 70px no-repeat,
-                url("../img/подложка.png") 500px 57px no-repeat,
-                url("../img/panorama-tablet middle.png") 0 0 no-repeat; 
-                height: 59vh;
-                width: 100%;
-                text-align: center;
-                margin: 0px auto;
+    background:url("../img/ПАНОРАМА ДНЯ.png") 519px 70px,
+                url("../img/подложка.png") 500px 57px;
   }
 }
   
 
 @media (min-width: 1200px) {
-  .container__photo {
-    min-width: 1200px;
+  .photo__title {
+    top: 140px;
+    left: 450px;
   }
-  .blog__title1 {
-    display: none;
+  .photo__sec img {
+    height: 394px;
   }
-  .blog__title {
-    display: none;
+  .photo__sec {
+    height: 394px;
   }
-  .blog__title2 {
-    display: block;
-    font-size: 18px;
-  }
+  
   .blog__image {
-    background:url("../img/ПАНОРАМА ДНЯ.png") 949px 67px no-repeat,
-                url("../img/подложка.png") 930px 54px no-repeat,
-                url("../img/panorama-desktop.png") 0 0 no-repeat; 
-                height: 58.5vh;
-                width: 100%;
-                text-align: center;
-                margin: 0px auto;
+    
+    background:url("../img/ПАНОРАМА ДНЯ.png"),
+                url("../img/подложка.png") 930px 54px;
+  }
+
+  .blog__title {
+    padding: 0px 330px;
+    padding-bottom: 97px;
+    padding-top: 100px;
   }
 }
+//==========================blog__item1=========================================
+
+
+
+
 
 //============================blog===================================
+
 .blog {
   //display:flex;
   //flex-direction: column;
@@ -160,6 +188,7 @@
 
 
 @media (min-width: 660px) {
+
   .container__photo {
     min-width: 660px;  
   }
@@ -178,6 +207,7 @@
 
 
 @media (min-width: 1200px) {
+
   .container__photo {
     min-width: 1200px;
   }
